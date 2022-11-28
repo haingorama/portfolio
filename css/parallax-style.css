@@ -1,0 +1,83 @@
+.header-portait {
+  width: 100%;
+}
+
+/* .portait-parallax {
+display: block;
+} */
+
+#scene {
+  height: 550px;
+  overflow: hidden;
+  background-image: url(../img/white-light.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+#backdrop1 {
+	background-size: 100% auto;
+  height: auto;
+  width: 100%;
+  background-repeat: repeat;
+  bottom: 0px;
+  position: absolute;
+}
+
+#chase-haingo {
+  padding:0;
+  margin: 270px 0 0 200px;
+  background-size: 60% auto;
+  height: auto;
+  width: 900px;
+  background-repeat: no-repeat;
+  bottom: -20px;
+  position: absolute;
+  overflow: visible;
+  animation: scale-up-center 90s ease 0s 1 normal none;
+}
+@keyframes scale-up-center {
+  0%{
+    transform: scale(3);
+  }
+  100%{
+    transform: scale(5);
+  }
+}
+
+#fl1 {
+  margin-top: 40px;
+  margin-left: 15%;
+  background-size: 30% auto;
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  bottom: 0px;
+  position: absolute;
+  overflow:visible;
+  z-index: 1;
+}
+
+#fl2 {
+  margin-top: 140px;
+  margin-left: 35%;
+  background-size: 70% auto;
+  height: auto;
+  width: 40%;
+  background-repeat: no-repeat;
+  bottom: 0px;
+  position: absolute;
+  overflow:visible;
+  z-index: 1;	
+}
+
+#fl3 {
+  margin-left: 35%;
+  background-size: 70% auto;
+  height: auto;
+  width: 20%;
+  background-repeat: no-repeat;
+  bottom: 0px;
+  position: absolute;
+  overflow:visible;
+  z-index: 2;
+}
