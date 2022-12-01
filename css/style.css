@@ -19,7 +19,7 @@ body, html {
 	font-family: 'Raleway', sans-serif;
 	/* background-color: #efe7ea; */
 	/* background-image: -webkit-linear-gradient(0deg, #efe7ea 0%, #E9E4F0 100%) */
-	background-image: -webkit-linear-gradient(0deg, hsl(264, 71%, 97%) 0%, #E9E4F0 100%)
+	background-image: -webkit-linear-gradient(0deg, hsl(264, 71%, 97%) 0%, #fff 50%, #E9E4F0 100%)
 }
 
 a {
@@ -30,7 +30,7 @@ a           {text-decoration: none;}
 a:link      {color: black}
 a:visited   {color: black}
 a:hover     {color: black}
-a:active    {color: #cfe09b}
+a:active    {color: #9b6bdd}
 a:focus     {color: #000}
 
 p,h6, address {
@@ -112,54 +112,47 @@ section {
 .navbar-haingo {
 	/* background: #efe7ea; */
 	/* background-color: coral; */
-	background-image: -webkit-linear-gradient(0deg, hsl(264, 71%, 97%) 0%, #E9E4F0 100%)
+	background-image: -webkit-linear-gradient(0deg, hsl(264, 71%, 97%) 0%, #fff 50%, #E9E4F0 100%);
 	height: 48px;
+	position: fixed;
+	z-index: 99;
 }
-
 .navbar-fixed-top {
 	position: fixed;
+	z-index: 99;
 }
 
 .navbar-haingo .navbar-brand {
 	padding-top: 8px;
 }
-
 .navbar-haingo .navbar-brand img {
 	margin-top: -7px;
 	height: 50px;
 }
-
 .navbar-haingo .primary-menu {
 	/* margin-top: -7px; */
 	margin-left: -15px;
 	margin-right: -15px;
 }
-
 .navbar-haingo .navbar-collapse {
 	/* background: rgb(255, 255, 255); */
 }
-
 .navbar-haingo .navbar-header{
 	height: 30px;
 }
-
 .navbar-toggle .icon-bar{
 	background: #000;
 }
-
 .navbar-logo{
 	height: 100px;
 	transition: ease-in-out 0.3s;
 }
-
 .navbar-header {
 	display: flex;
 }
-
 .navbar-header p {
 	line-height: 50px;
 }
-
 .navbar-toggle {
 	display: block !important;
 	margin-top: 120px;
@@ -174,21 +167,17 @@ section {
     border: 2px solid;
 	border-radius: 2px;
 }
-
 .navbar-toggle .icon-bar {
 	background: rgb(0, 0, 0);
 }
-
 .navbar-nav > li > a {
 	padding-top: 25px;
     line-height: 1px;
 }
-
 .nav>li>a:hover {
 	background-color: transparent;
 	/* text-decoration: rgb(255, 59, 92) underline 2px; */
 }
-
 /*effect-underline*/
 .nav>li>a:after {
 	content: '';
@@ -203,7 +192,6 @@ section {
 	transform-origin: bottom right;
 	transition: transform 0.4s ease-out;
 }
-
 .nav>li>a:hover:after, .transition-effect span:hover:after {
 	transform: scaleX(1);
 	transform-origin: bottom left;
@@ -433,7 +421,7 @@ section {
 
 .i-am--title {
 	color: transparent;
-	font-size: 4rem;
+	font-size: 3.8rem;
 	font-weight: 900;
 	background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
 	-webkit-background-clip: text;
@@ -476,7 +464,8 @@ section {
 	font-size: 2.8em;
 }
 .cv-pdf span:hover {
-	-webkit-text-stroke: 1px #333;
+	-webkit-text-stroke: 1px rgb(29, 28, 28);
+	color: rgb(162, 63, 215);
 }
 /* ---------------------------------------------------------------- */
 /* ------------------------- ÉXPERIENCES ------------------------- */
@@ -492,11 +481,20 @@ section {
 	width: 100%;
 	height: 100%;
 	margin: auto;
+
+	/* position: absolute; */
+	z-index: -1;
+}
+.exp--espace {
+
+	/* position: absolute; */
 }
 .swiper-container {
 	width: 100%;
 	height: 100vh;
 	background: rgb(10, 10, 11);
+
+	/* position: relative; */
 }
 .swiper-slide {
 	width: 500px;
@@ -506,7 +504,6 @@ section {
 	flex-direction: column;
 	display: flex;
 }
-
 .swiper-slide a {
 	color:#e8def7;
 	padding-left: 20px;
@@ -528,8 +525,14 @@ section {
 	font-family: 'Raleway', sans-serif;
 	text-transform: none;
 	padding-left: 20px;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	letter-spacing: 0.8px;
+	/* color: rgb(203, 106, 255); */
+	background: rgb(212, 136, 253);
+    background: -webkit-linear-gradient(to right, #f7f4fa, rgb(212, 136, 253));
+    background: linear-gradient(to right, #f7f4fa, rgb(212, 136, 253));
+    -webkit-background-clip: text;
+    background-clip: text; 
 }
 .exp-cards {
 	width: 100%;
@@ -577,20 +580,20 @@ section {
 	border-radius: 4px;
 	/* background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) -50%, rgba(0, 0, 0, 0.888) 80%); */
 	/* background-image: linear-gradient(90deg, rgba(25, 136, 247, 0.7) 0%, rgba(138, 79, 190, 0.7) 51%, rgba(247, 25, 136, 0.7) 100%); */
-	background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.893) 50%);
+	background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 48%, rgba(255, 255, 255, 0.893) 48%);
 }
 
 .title-box h3  {
 	font-weight: 700;
 	line-height: normal;
 	max-width: 100%;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 }
 .title-box h3 span {
 	font-weight: 700;
 	line-height: normal;
 	max-width: 100%;
-	font-size: 2.6rem;
+	font-size: 2.2rem;
 	padding-right: 10px;
 }
 .title-box p {
@@ -599,30 +602,30 @@ section {
 	color: rgb(59, 59, 59);
 }
 .exp--text-inside {
-	display: flex;
-	text-align: left;
-	width: 50%;
-	height: 100%;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	position: absolute;
-	padding: 0 20px;
-	top: 0;
-	left: 50%;
-	right: 0 !important;
-	bottom: 50px;
-	justify-content: center;
-	color: rgb(33, 33, 33);
-	font-weight: 600;
-	z-index: 15;
+    display: flex;
+    text-align: left;
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: absolute;
+    padding: 0 20px;
+    top: 0;
+    left: 47%;
+    right: 0 !important;
+    bottom: 50px;
+    justify-content: center;
+    color: rgb(33, 33, 33);
+    font-weight: 600;
+    z-index: 15;
 }
 .exp--text-inside h2 {
-	font-size: 1em;
+	font-size: 0.7em;
 	font-weight: 600;
 }
 .exp--text-inside h2 span {
-	font-size: 1.5em;
-
+	font-size: 2rem;
+	color: rgb(162, 63, 215);
 }
 .exp--text-inside p {
 	font-weight: 600;
@@ -631,10 +634,11 @@ section {
 .exp--text-inside ul {
 	list-style-type: none;
 	font-size: 1.2rem;
-	line-height: 26px;
+	line-height: 22px;
 }
 .exp--campustheque {
-	background-image: radial-gradient(rgba(255, 255, 255, 0.827)40%, rgba(255, 255, 255, 0.27) 100%);
+	background-image: radial-gradient(rgba(255, 255, 255, 0.827)40%, 
+	rgba(255, 255, 255, 0.27) 100%);
 }
 .swiper-slide .title-box{
 	/* transform: translateX(-50%);
@@ -767,12 +771,13 @@ section {
 }
 .competences {
 	padding-top: 50px;
+	/* position: relative; */
 }
 .title--competences {
 	margin: -63px 0 30px;
 	background: #e8def7;
-    background: -webkit-linear-gradient(to right, #f7f4fa, #e8def7);
-    background: linear-gradient(to right, #f7f4fa, #e8def7);
+    background: -webkit-linear-gradient(to right, #f7f4fa, #fff, #e8def7);
+    background: linear-gradient(to right, #f7f4fa, #fff, #e8def7);
     -webkit-background-clip: text;
     background-clip: text; 
     color: transparent;
@@ -781,7 +786,7 @@ section {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 440px;
+	height: 290px;
 }
 .competences--cards div {
 	width: 30%;
@@ -790,14 +795,13 @@ section {
     flex-direction: column;
     align-items: center;
 }
-
 .c--card img {
 	width:50px;
 	height:auto;
 	margin-bottom: 15px;
 }
 .c--card h1 {
-	font-size: 1.3em;
+	font-size: 1.1em;
     font-weight: 700;
 	text-transform: none;
 	font-family: 'Anonymous Pro', monospace;
@@ -816,9 +820,11 @@ section {
 /* ------------------------- FORMATIONS ------------------------- */
 /* -------------------------------------------------------------- */
 .formations {
-	background-image: url(../img/keyboard.jpg);
+	/* background-color: rgb(0, 0, 0); */
+	background-image: url(../img/waves-rainbow.png);
 	width:100%;
 	padding: 50px 0;
+	top: 500px;
 }
 
 .formations--cards {
