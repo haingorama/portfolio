@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .titles {
-	color:rgb(109, 108, 108);
+	color:rgb(10, 10, 11);
 	font-size: 5em;
 	margin: 0 10px 10px 0;
 	text-transform: uppercase;
@@ -110,8 +110,9 @@ section {
 }
 
 .navbar-haingo {
-	background: #efe7ea;
+	/* background: #efe7ea; */
 	/* background-color: coral; */
+	background-image: -webkit-linear-gradient(0deg, hsl(264, 71%, 97%) 0%, #E9E4F0 100%)
 	height: 48px;
 }
 
@@ -428,8 +429,6 @@ section {
 	align-items: right;
 	justify-content: center;
 	flex-direction: column;
-	/* position:absolute;
-	@include center(); */
 }
 
 .i-am--title {
@@ -482,7 +481,10 @@ section {
 /* ---------------------------------------------------------------- */
 /* ------------------------- ÉXPERIENCES ------------------------- */
 /* -------------------------------------------------------------- */
-
+.exp--espace-title {
+	background: rgb(10, 10, 11);
+	height: 40px;
+}
 .title--experiences {
 	color: rgb(10, 10, 11);
 }
@@ -519,13 +521,14 @@ section {
 	margin-bottom: -10px;
 	line-height: 70px;
 	letter-spacing: -3px;
+	font-size: 2.3rem;
 	font-family:'Archivo black', 'Archivo', serif;
 }
 .swiper-slide h1>span {
 	font-family: 'Raleway', sans-serif;
 	text-transform: none;
 	padding-left: 20px;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	letter-spacing: 0.8px;
 }
 .exp-cards {
@@ -587,13 +590,13 @@ section {
 	font-weight: 700;
 	line-height: normal;
 	max-width: 100%;
-	font-size: 3rem;
+	font-size: 2.6rem;
 	padding-right: 10px;
 }
 .title-box p {
 	padding-top: 0;
 	margin: 0;
-	color: rgb(30, 30, 30);
+	color: rgb(59, 59, 59);
 }
 .exp--text-inside {
 	display: flex;
@@ -618,15 +621,16 @@ section {
 	font-weight: 600;
 }
 .exp--text-inside h2 span {
-	font-size: 1.8em;
+	font-size: 1.5em;
 
 }
 .exp--text-inside p {
 	font-weight: 600;
+	font-size: 1.2rem;
 }
 .exp--text-inside ul {
 	list-style-type: none;
-	font-size: 1.1em;
+	font-size: 1.2rem;
 	line-height: 26px;
 }
 .exp--campustheque {
@@ -756,28 +760,57 @@ section {
 /* --------------------------------------------------------------- */
 /* ------------------------- COMPÉTENCES ------------------------- */
 /* --------------------------------------------------------------- */
-.title--competences {
-	margin: 100px 0 30px;
+.bg-titre-cpt {
+	background: rgb(10, 10, 11);
+	width: 100%;
+	height: 175px;
 }
-
+.competences {
+	padding-top: 50px;
+}
+.title--competences {
+	margin: -63px 0 30px;
+	background: #e8def7;
+    background: -webkit-linear-gradient(to right, #f7f4fa, #e8def7);
+    background: linear-gradient(to right, #f7f4fa, #e8def7);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+}
 .competences--cards {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	height: 440px;
 }
-
 .competences--cards div {
 	width: 30%;
 	height:200px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.c--card1 {background-color: yellow ;}
-.c--card2 {background-color: violet;}
-.c--card3 {background-color: rgb(123, 113, 236);}
-.c--card4 {background-color: powderblue;}
-.c--card5 {background-color: palevioletred;}
-.c--card6 {background-color: rgb(84, 156, 156);}
+.c--card img {
+	width:50px;
+	height:auto;
+	margin-bottom: 15px;
+}
+.c--card h1 {
+	font-size: 1.3em;
+    font-weight: 700;
+	text-transform: none;
+	font-family: 'Anonymous Pro', monospace;
+	margin: 0 0 15px;
+}
+.c--card ul {
+	list-style-type: none;
+	margin-top: 10px;
+}
+.c--card li {
+	/* padding-right: 30px; */
+	text-align: center;
+}
 
 /* -------------------------------------------------------------- */
 /* ------------------------- FORMATIONS ------------------------- */
