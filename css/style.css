@@ -17,7 +17,9 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
-	background-color: #efe7ea;
+	/* background-color: #efe7ea; */
+	/* background-image: -webkit-linear-gradient(0deg, #efe7ea 0%, #E9E4F0 100%) */
+	background-image: -webkit-linear-gradient(0deg, hsl(264, 71%, 97%) 0%, #E9E4F0 100%)
 }
 
 a {
@@ -497,11 +499,34 @@ section {
 .swiper-slide {
 	width: 500px;
 	height: 100%;
-	display: flex;
 	margin: auto;
-	align-items: center;
-	justify-content: center;
 	background: rgb(10, 10, 11);
+	flex-direction: column;
+	display: flex;
+}
+
+.swiper-slide a {
+	color:#e8def7;
+	padding-left: 20px;
+}
+.swiper-slide h1 {
+	background: #e8def7;
+    background: -webkit-linear-gradient(to right, #f7f4fa, #e8def7);
+    background: linear-gradient(to right, #f7f4fa, #e8def7);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+	margin-bottom: -10px;
+	line-height: 70px;
+	letter-spacing: -3px;
+	font-family:'Archivo black', 'Archivo', serif;
+}
+.swiper-slide h1>span {
+	font-family: 'Raleway', sans-serif;
+	text-transform: none;
+	padding-left: 20px;
+	font-size: 1.7rem;
+	letter-spacing: 0.8px;
 }
 .exp-cards {
 	width: 100%;
@@ -521,21 +546,6 @@ section {
 	padding: 0;
 	margin: 0;
 }
-/* .exp-card.two img {
-	filter: sepia(100%) hue-rotate(190deg) saturate(300%);
-}
-.exp-card.three img {
-	height: 50vh;
-}
-.exp-card.four img {
-	filter: invert(4%) sepia(75%) saturate(500%) hue-rotate(356deg) brightness(70%) contrast(50%);
-}
-.exp-card.five img {
-	filter: invert(4%) sepia(75%) saturate(500%) hue-rotate(356deg) brightness(70%) contrast(70%);
-}
-.exp-card.six img {
-	filter: invert(4%) sepia(75%) saturate(500%) hue-rotate(356deg) brightness(70%) contrast(100%);
-} */
 
 .exp-text {
 	display: flex;
@@ -564,9 +574,27 @@ section {
 	border-radius: 4px;
 	/* background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) -50%, rgba(0, 0, 0, 0.888) 80%); */
 	/* background-image: linear-gradient(90deg, rgba(25, 136, 247, 0.7) 0%, rgba(138, 79, 190, 0.7) 51%, rgba(247, 25, 136, 0.7) 100%); */
-	background-image: linear-gradient(90deg, rgba(247, 25, 136, 0.4) 0%, rgba(247, 25, 136, 0.9) 70%);
+	background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.893) 50%);
 }
 
+.title-box h3  {
+	font-weight: 700;
+	line-height: normal;
+	max-width: 100%;
+	font-size: 1.5rem;
+}
+.title-box h3 span {
+	font-weight: 700;
+	line-height: normal;
+	max-width: 100%;
+	font-size: 3rem;
+	padding-right: 10px;
+}
+.title-box p {
+	padding-top: 0;
+	margin: 0;
+	color: rgb(30, 30, 30);
+}
 .exp--text-inside {
 	display: flex;
 	text-align: left;
@@ -575,32 +603,35 @@ section {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	position: absolute;
+	padding: 0 20px;
 	top: 0;
 	left: 50%;
 	right: 0 !important;
 	bottom: 50px;
 	justify-content: center;
-	color: rgb(0, 0, 0);
+	color: rgb(33, 33, 33);
+	font-weight: 600;
 	z-index: 15;
 }
-.title-box h4 {
-	display: block;
-	/* font-family: "Futura"; */
-	font-weight: 700;
-	line-height: normal;
-	max-width: 100%;
-	font-size: 3vmin;
+.exp--text-inside h2 {
+	font-size: 1em;
+	font-weight: 600;
 }
-.title-box p {
-	/* font-family: "HelveticaNow"; */
-	font-size: 2vmin;
-	padding-top: 0;
-	margin: 0;
-	padding-left: 1%;
-	max-width: 100%;
-	color: rgb(0, 0, 0);
-}
+.exp--text-inside h2 span {
+	font-size: 1.8em;
 
+}
+.exp--text-inside p {
+	font-weight: 600;
+}
+.exp--text-inside ul {
+	list-style-type: none;
+	font-size: 1.1em;
+	line-height: 26px;
+}
+.exp--campustheque {
+	background-image: radial-gradient(rgba(255, 255, 255, 0.827)40%, rgba(255, 255, 255, 0.27) 100%);
+}
 .swiper-slide .title-box{
 	/* transform: translateX(-50%);
 	transition: all .7s ease .3s; */
@@ -615,14 +646,6 @@ section {
 	background: white;
 }
 
-/* .swiper-slide .card img {
-	transition: filter .7s ease;
-	filter: grayscale(100%);
-}
-.swiper-slide-active .card img {
-	filter: grayscale(0%) brightness(60%);
-} */
-
 .swiper-pagination-bullet-active {
 	background: white !important;
 	width: 25px !important;
@@ -630,7 +653,7 @@ section {
 	border-radius: 0 !important;
 }
 .swiper-pagination-bullet {
-	background: rgb(255, 255, 255) !important;
+	background: #E9E4F0 !important;
 	width: 25px !important;
 	height: 5px !important;
 	border-radius: 0!important;
@@ -680,7 +703,7 @@ section {
 	justify-content: center;
 	background-color: transparent;
 	position: absolute;
-	border: solid 2px rgb(118, 118, 114);
+	border: solid 3px rgb(0, 0, 0);
 	border-left: 0;
 	border-bottom: 0;
 	transition: all 0.1s ease;
@@ -698,6 +721,7 @@ section {
 	width: 5px;
 	height: 5px;
 }
+
 .swiper-button-prev:after,
 .swiper-button-next:after {
 	width: 0px;
