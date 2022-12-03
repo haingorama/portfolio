@@ -196,8 +196,17 @@ section {
 	transform: scaleX(1);
 	transform-origin: bottom left;
 }
-
-.masked {
+/* Titres blanc*/
+.title--competences {
+	margin: -63px 0 -14px;
+	background: #e8def7;
+    background: -webkit-linear-gradient(to right, #f7f4fa, #fff, #e8def7);
+    background: linear-gradient(to right, #f7f4fa, #fff, #e8def7);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+}
+.masked { 
 	background: rgba(19, 19, 22, 0.1);
     background-image: url(../img/patern.png);
     width: 100%;
@@ -772,23 +781,14 @@ section {
     margin-top: 485px;
 }
 .competences {
-	padding-top: 26px;
+	padding-top: ;
 	/* position:relative; */
-}
-.title--competences {
-	margin: -63px 0 30px;
-	background: #e8def7;
-    background: -webkit-linear-gradient(to right, #f7f4fa, #fff, #e8def7);
-    background: linear-gradient(to right, #f7f4fa, #fff, #e8def7);
-    -webkit-background-clip: text;
-    background-clip: text; 
-    color: transparent;
 }
 .competences--cards {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 270px;
+	padding: 75px;
 }
 .competences--cards div {
 	width: 30%;
@@ -819,20 +819,20 @@ section {
 }
 
 /* -------------------------------------------------------------- */
-/* ------------------------- FORMATIONS ------------------------- */
+/* ------------------------- PROJET ------------------------- */
 /* -------------------------------------------------------------- */
-.formations {
+.projets {
 	background-color: rgb(10, 10, 11);
 	/* background-image: url(../img/typewriter.jpg); */
 	background-size: cover;
-	width: 95vmax;
-	height:110%;
-	/* padding: 50px 0; */
-	/* top: 500px; */
+	width: 100%;
+	height: 790px;
 	margin: 0 auto;
+	position: relative;
+	z-index: -1;
 }
 
-.formation-wrapper {
+.projet-wrapper {
 	margin-top: 5px;
 }
 
@@ -841,22 +841,22 @@ section {
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.f--line:hover ~ .f--line .formation--slide {
+.f--line:hover ~ .f--line .projet--slide {
 	transform: translateY(-100%);
 }
-.f--line:hover .formation--slide {
+.f--line:hover .projet--slide {
 	transform: translateX(100%);
 }
-.f--line:hover .formation--card:hover ~ .formation--card .formation--slide {
+.f--line:hover .projet--card:hover ~ .projet--card .projet--slide {
 	transform: translateX(-100%);
 }
-.f--line:hover .formation--card:hover .formation--slide {
+.f--line:hover .projet--card:hover .projet--slide {
 	transform: none;
 	visibility: visible;
 	transition-delay: 0s;
 }
 
-.formation--card {
+.projet--card {
 	overflow: hidden;
 	position: relative;
 	flex: 1 1 auto;
@@ -864,7 +864,7 @@ section {
 	height: 260px;
 	margin: 5px;
 }
-.formation--card .photo-container {
+.projet--card .photo-container {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -876,7 +876,7 @@ section {
 	transform-origin: bottom right;
 	transition: 0.2s;
 }
-.formation--card .photo-container::before {
+.projet--card .photo-container::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -884,7 +884,8 @@ section {
 	bottom: 0;
 	left: 0;
 }
-.formation--card .formation--slide {
+
+.projet--card .projet--slide {
 	visibility: hidden;
 	display: flex;
 	flex-direction: column;
@@ -901,33 +902,107 @@ section {
 	transform: translateY(100%);
 	transition: all 0.275s ease-in-out, visibility 0s 0.275s;
 }
-.formation--card .formation--slide h2 {
+.projet--card .projet--slide h2 {
 	color: #ffffff;
 	font-weight: bolder;
 	font-size: 28px;
 	margin: 0 0 15px;
 	z-index: 0;
 }
-.formation--card .formation--slide .divider {
+.projet--card .projet--slide .divider {
 	margin-bottom: 15px;
 	width: 30px;
 	height: 5px;
 	background-color: #f5811e;
 }
-.formation--card .formation--slide p {
+.projet--card .projet--slide p {
 	color: #ffffff;
 	margin: 0;
 }
 @media (max-width: 580px) {
-	.formation--card {
+	.projet--card {
 		flex: none;
 		width: 100%;
 	}
 }
 
 /* ----------------------------------------------------------- */
-/* ------------------------- PROJETS ------------------------- */
+/* ------------------------- FORMATIONS ------------------------- */
 /* ----------------------------------------------------------- */
+.formations {
+	width: 100%;
+	height: 250px;
+	margin: 0 auto;
+	position: relative;
+	z-index: -1;
+
+	width:100%;
+	margin:0;
+	padding-top: 60px; 
+	background-image:linear-gradient( 45deg, rgba(255,166,0,1) 14.7%, rgba(255,99,97,1) 73%);
+	background-size:300% 300%;
+	animation: formationBg-gradient 15s ease infinite;
+}
+@keyframes formationBg-gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+.title--formations {
+	margin: -63px 0 -14px;
+	background: #e8def7;
+	background-image:linear-gradient( 45deg, rgba(255,166,0,1) 14.7%, rgba(255,99,97,1) 73%);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+	background-size:300% 300%;
+	animation: title-gradient 15s ease infinite;
+}
+@keyframes title-gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+.formations--cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.formations--cards div {
+	width: 30%;
+	height:200px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formation--img {
+	background-color: #000000;
+	width: 900px;
+	height: 200px;
+}
+.f--card img {
+	width:100%;
+	height:auto;
+	margin-bottom: 15px;
+	background-size: contain;
+}
+.f--card h1 {
+	font-size: 1.1em;
+    font-weight: 700;
+	text-transform: none;
+	font-family: 'Anonymous Pro', monospace;
+	margin: 0 0 15px;
+}
+.f--card ul {
+	list-style-type: none;
+	margin-top: 5px;
+}
+.f--card li {
+	/* padding-right: 30px; */
+	text-align: center;
+}
 
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */
@@ -936,21 +1011,17 @@ footer {
 	background: #130e0e;
 	padding: 10px 0;
 }
-
 footer, footer p {
 	color: #fff;
 }
-
 footer a {
 	color: #fff;
 	font-weight: bold;
 }
-
 footer a:hover {
 	color: #fff;
 	text-decoration: underline;
 }
-
 .logo-footer {
 	margin: 10px 0 15px;
 }
@@ -961,16 +1032,13 @@ ul.social {
 	margin: 0 0 10px 0;
 	padding: 0;
 }
-
 ul.social li{
 	display: inline-block;
 	width: 30px;
 }
-
 ul.social li a {
 	text-decoration: none;
 }
-
 ul.social li a i {
 	color: #fff;
 	width: 32px;
@@ -982,7 +1050,6 @@ ul.social li a i {
 	-webkit-transition: all 0.5;
 	transition: all 0.5s;
 }
-
 ul.social li a i:hover,
 ul.social li a i:focus {
 	background-color: #fff;
