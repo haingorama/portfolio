@@ -2677,7 +2677,7 @@ to {
 /* -------------------------------------------------------------- */
 .projets {
 	background-color: rgb(10, 10, 11);
-	/* background-image: url(../img/typewriter.jpg); */
+	padding-top: 50px;
 	background-size: cover;
 	width: 100%;
 	height: 790px;
@@ -2685,11 +2685,15 @@ to {
 	position: relative;
 	z-index: -1;
 }
-
+.projets p {
+	font-size: 1.1em;
+    font-weight: 500;
+	color: #8b44ee;
+	padding-bottom: 10px;
+}
 .projet-wrapper {
 	margin-top: 5px;
 }
-
 .f--line {
 	display: flex;
 	justify-content: center;
@@ -2750,7 +2754,7 @@ to {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.9);
 	padding: 15px;
 	will-change: transform;
 	transform: translateY(100%);
@@ -2767,7 +2771,7 @@ to {
 	margin-bottom: 15px;
 	width: 30px;
 	height: 5px;
-	background-color: #f5811e;
+	background-color: #8b44ee;
 }
 .projet--card .projet--slide p {
 	color: #ffffff;
