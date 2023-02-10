@@ -210,32 +210,11 @@ span {
 	}
 }
 
-/* Countdown
-********************************************************************* */
-
-/* .days, .hours, .minutes, .seconds {
-    font-size: 8em;
-    font-weight: bold;
-    text-align: center;
-    border-top: 3px solid #fff;
-	margin-top: 30px;
-} */
-
-/* @media only screen and (max-width: 920px) {
-    .days, .hours, .minutes, .seconds {
-        font-size: 5em;
-        margin: 0 10px;
-    }
-} */
-
-/* General
-********************************************************************* */
-
 header {
 	overflow: hidden;
 	padding: 20px 0 30px 0;
 	background: #ffbd12;
-	background-image: url(/img/projets/family-event/giphy-circle.gif);
+	background-image: url(img/projets/family-event/giphy-circle.gif);
 	background-repeat: no-repeat;
     background-position: 130% 70%;
     background-size: 850px;
@@ -296,10 +275,7 @@ img {
 
 #device {
 	margin-top: 116px;
-	/* background-image: url(/img/projets/family-event/giphy-artifice.gif);
-    background-position: center 82%; */
 	background-size: 160%;
-	/* background-position-x: 10px; */
 	width: 430px;
 }
 
@@ -353,7 +329,6 @@ img {
     justify-content: space-evenly;
     align-items: center;
 	padding-top: 13px;
-	background-image: url(/img/projets/family-event/giphy-whitestars.gif);
     background-repeat: no-repeat;
     background-position-x: 55%;
     background-size: contain;
