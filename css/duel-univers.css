@@ -44,38 +44,53 @@ h1:after {
     text-shadow: 10px 10px 10px rgba(29, 29, 29, 0.3), 15px 15px 15px rgba(20, 20, 20, 0.4), 20px 20px 20px rgba(41, 41, 41, 0.1);
     mix-blend-mode: multiply;
 }
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 1.8px;
+}
 
 img {
     width: 100%;
 }
 
 .explication {
+    align-items: center;
     font-weight: 700;
     letter-spacing: 1.8px;
     line-height: 35px;
     font-size: 1.6rem;
     margin: 50px 0 70px 0;
-    text-align: center;
-    padding: 0 20%;
+    text-align: start;
+    padding: 0 4%;
     color: #111111;
-    width: 870px;
+    display: flex;
 }
-
+.texte {
+    width: 40%;
+    padding: 0 90px 0 70px;
+}
 .site {
-    width: 65%;
+    width: 50%;
 }
 
 .details {
     display: flex;
     align-items: center;
-    margin: 70px 0;
+    background-color: #000000;
+    color: #e3e3e3;
+    margin: 70px 0 0;
+    /* padding: 20px 0 70px 170px; */
+    width: 100%;
+    justify-content: space-between;
 }
 .skills {
     width: 50%;
     font-weight: 700;
 }
-.mission {
+.boutons {
     width: 50%;
+    padding: 20px 0 70px 170px;
 }
 
 .login-box .btn a {
