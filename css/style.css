@@ -2720,7 +2720,7 @@ to {
 	flex: 1 1 auto;
 	max-width: 380px;
 	height: 260px;
-	margin: 5px;
+	margin: 10px;
 }
 .projet--card .photo-container {
 	position: absolute;
@@ -2804,10 +2804,9 @@ to {
 	margin: 0 auto;
 	position: relative;
 	z-index: -1;
-	
 	width:100%;
 	margin:0;
-	padding-top: 60px; 
+	padding-top: 100px; 
 	background-image:linear-gradient( 45deg, #f4c4f3 14.7%, #ca8bb3 73%, #493bdf 130%);
 	background-size:300% 300%;
 	animation: formationBg-gradient 15s ease infinite;
@@ -2839,13 +2838,13 @@ to {
 	color: rgb(0, 0, 0);
 }
 .formations--cards div {
-	width: 92%;
+	width: 93%;
     height: 221px;
-	margin: 7px;
-	display: flex;
+    margin: 7px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-	justify-content: center;
+    justify-content: center;
 }
 .f--card {
 	background-color: rgba(255, 255, 255, 0.845);
