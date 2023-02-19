@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
+body {
+    background-color: #f2f2f2;
+}
 /* Override UGG site */
 #main {
     width: 100%; 
@@ -12,7 +15,18 @@
 .breadcrumb {
     display:none;
 }
-
+a {
+    text-decoration: none;
+    color: white;
+}
+button {
+    width: 150px;
+    height: 40px;
+    background: #F00808;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
 /* Helpers */
 /**************************/
 .margin-top-10 {
@@ -37,6 +51,7 @@
 #parallax-world-of-ugg h2 {
     font-family:'Oswald', 
     sans-serif; 
+    padding-top: 60px;
     font-size:70px; 
     letter-spacing:10px; 
     text-align:center; 
@@ -45,21 +60,47 @@
     text-transform:uppercase; 
     z-index:10; 
     opacity:.9;
+    /* background-image: url("../img/projets/campustheque/LOGO\ CAMPUS\ stroke\ blanc.png"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    height: 240px;
 }
+.block-1 {
+    display: flex;
+    flex-direction: row;
+}
+.text {
+    width: 40%;
+    padding-right: 60px;
+}
+.image-site {
+    width: 60%;
+}
+.image-site img {
+    width: 120%;
+}
+
 #parallax-world-of-ugg h3 {
-    font-family:'Oswald', 
-    sans-serif; 
+    font-family:'Oswald', sans-serif; 
     font-size:14px; 
-    line-height:0; 
-    font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;
+    line-height:34px; 
+    font-weight:400; 
+    letter-spacing:8px; 
+    text-transform: uppercase; 
+    color:black;
 }
 #parallax-world-of-ugg p {
     font-family:'Source Sans Pro', 
     sans-serif; 
-    font-weight:400; font-size:14px; line-height:24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
 }
 .first-character {font-weight:400; 
-    float: left; font-size: 84px; line-height: 64px; padding-top: 4px; 
+    float: left; font-size: 84px; 
+    line-height: 64px; 
+    padding-top: 4px; 
     padding-right: 8px; 
     padding-left: 3px; 
     font-family: 'Source Sans Pro', 
@@ -73,7 +114,7 @@
 /* Section - Title */
 /**************************/
 #parallax-world-of-ugg .title {
-    background: white; 
+    background: #ffffff; 
     padding: 60px; 
     margin:0 auto; 
     text-align:center;
@@ -86,7 +127,7 @@
 /* Section - Block */
 /**************************/
 #parallax-world-of-ugg .block {
-    background: white; 
+    background: #f2f2f2; 
     padding: 60px; 
     width:820px; 
     margin:0 auto; 
@@ -109,12 +150,10 @@
 /**************************/
 #parallax-world-of-ugg 
 .parallax-one {
-    padding-top: 200px; 
-    padding-bottom: 200px; 
     overflow: hidden; 
     position: relative; 
     width: 100%; 
-    background-image: url("img/projets/campustheque/bg.png" );
+    background-image: url("../img/projets/campustheque/bg.png" );
     background-attachment: fixed; 
     background-size: cover; -moz-background-size: cover; 
     -webkit-background-size: cover; 
@@ -122,11 +161,10 @@
     background-position: top center;
 }
 #parallax-world-of-ugg .parallax-two {
-    padding-top: 200px; 
-    padding-bottom: 200px; 
     overflow: hidden; 
-    position: relative; width: 100%; 
-    background-image: url(https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=); 
+    position: relative; 
+    width: 100%; 
+    background-image: url("../img/projets/campustheque/echanges.jpg"); 
     background-attachment: fixed; 
     background-size: cover; 
     -moz-background-size: cover; 
@@ -135,16 +173,23 @@
     background-position: center center;
 }
 #parallax-world-of-ugg .parallax-three {
-    padding-top: 200px; 
-    padding-bottom: 200px; 
     overflow: hidden; 
-    position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=); 
-    background-attachment: 
-    fixed; background-size: cover; 
+    position: relative; width: 100%; 
+    background-image: url("../img/projets/campustheque/equipe.jpg"); 
+    background-attachment: fixed; 
+    background-size: cover; 
     -moz-background-size: cover; 
     -webkit-background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center center;
+}
+
+.parallax-one img {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 80px 0 120px;
 }
 
 /* Extras */
@@ -153,6 +198,29 @@
     border-bottom:1px solid black; 
     width: 150px; 
     margin:0 auto;
+}
+.sectiob-bg-3 {
+    background-image: url("../img/projets/campustheque/LOGO\ stroke.png");
+    background-size: 3%;
+}
+
+.cards {
+    margin-top: 50px;
+}
+.cards div {
+    display: inline-block;
+    margin-left: 55px;
+    padding: 25px 0;
+    font-family:'Oswald', sans-serif; 
+    /* border: #3d3c3a 2px solid; */
+    background: #ffffff;
+    border-radius: 5px;
+    width: 130px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
 }
 
 /* Media Queries */
