@@ -4,122 +4,6 @@
     <meta charset="UTF-8" />
     <title>Présentation Family Event</title>
     <script type="text/javascript">
-      // When the window has finished loading create our google map below
-      google.maps.event.addDomListener(window, "load", init);
-
-      function init() {
-        // Basic options for a simple Google Map
-        var mapOptions = {
-          // How zoomed in you want the map to start at (always required)
-          zoom: 11,
-          scrollwheel: false,
-          navigationControl: false,
-          scaleControl: false,
-          draggable: false,
-          scaleControl: false,
-          disableDefaultUI: true,
-
-          // The latitude and longitude to center the map (always required)
-          center: new google.maps.LatLng(51.5073, -0.1277),
-
-          styles: [
-            {
-              featureType: "water",
-              elementType: "geometry",
-              stylers: [{ color: "#e9e9e9" }, { lightness: 17 }],
-            },
-            {
-              featureType: "landscape",
-              elementType: "geometry",
-              stylers: [{ color: "#f5f5f5" }, { lightness: 20 }],
-            },
-            {
-              featureType: "road.highway",
-              elementType: "geometry.fill",
-              stylers: [{ color: "#ffffff" }, { lightness: 17 }],
-            },
-            {
-              featureType: "road.highway",
-              elementType: "geometry.stroke",
-              stylers: [
-                { color: "#ffffff" },
-                { lightness: 29 },
-                { weight: 0.2 },
-              ],
-            },
-            {
-              featureType: "road.arterial",
-              elementType: "geometry",
-              stylers: [{ color: "#ffffff" }, { lightness: 18 }],
-            },
-            {
-              featureType: "road.local",
-              elementType: "geometry",
-              stylers: [{ color: "#ffffff" }, { lightness: 16 }],
-            },
-            {
-              featureType: "poi",
-              elementType: "geometry",
-              stylers: [{ color: "#f5f5f5" }, { lightness: 21 }],
-            },
-            {
-              featureType: "poi.park",
-              elementType: "geometry",
-              stylers: [{ color: "#dedede" }, { lightness: 21 }],
-            },
-            {
-              elementType: "labels.text.stroke",
-              stylers: [
-                { visibility: "on" },
-                { color: "#ffffff" },
-                { lightness: 16 },
-              ],
-            },
-            {
-              elementType: "labels.text.fill",
-              stylers: [
-                { saturation: 36 },
-                { color: "#333333" },
-                { lightness: 40 },
-              ],
-            },
-            { elementType: "labels.icon", stylers: [{ visibility: "off" }] },
-            {
-              featureType: "transit",
-              elementType: "geometry",
-              stylers: [{ color: "#f2f2f2" }, { lightness: 19 }],
-            },
-            {
-              featureType: "administrative",
-              elementType: "geometry.fill",
-              stylers: [{ color: "#fefefe" }, { lightness: 20 }],
-            },
-            {
-              featureType: "administrative",
-              elementType: "geometry.stroke",
-              stylers: [
-                { color: "#fefefe" },
-                { lightness: 17 },
-                { weight: 1.2 },
-              ],
-            },
-          ],
-        };
-
-        // Get the HTML DOM element that will contain your map
-        // We are using a div with id="map" seen below in the <body>
-        var mapElement = document.getElementById("map");
-
-        // Create the Google Map using our element and options defined above
-        var map = new google.maps.Map(mapElement, mapOptions);
-
-        // Let's also add a marker while we're at it
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(51.5073, -0.1277),
-          map: map,
-          title: "Snazzy!",
-        });
-      }
     </script>
     <link
       rel="stylesheet"
@@ -134,10 +18,12 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" type="text/css" href="css/family-event.css" />
+    <!-- Zoom image galerie -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <!-- partial:index.partial.html -->
+
     <header>
       <div class="container">
         <div class="eight columns">
@@ -146,14 +32,14 @@
             src="img/projets/family-event/check-check.png"
             alt=""
           />
-          <h2 class="preheader">Projet d'application mobile dfhfg</h2>
+          <h2 class="preheader">Projet design d'application mobile</h2>
           <img
             class="header title-logo"
             src="img/projets/family-event/logo_jaune.png"
             alt=""
           />
           <p class="paragraph">
-            <span>Mission</span> > Designer une application mobile en utilisant
+            <span>Objectifs</span> > Designer une application mobile en utilisant
             l'Ui/Ux à partir d'une idée qui pourrait être utile.
           </p>
           <button class="btn">
@@ -184,10 +70,11 @@
         </div>
       </div>
     </header>
+
     <div class="trait"></div>
 
     <div id="whiteBand">
-      <div class="container">
+      <!-- <div class="container"> -->
         <div class="demonstration">
           <div class="demo">
             <img
@@ -196,18 +83,73 @@
             />
           </div>
 
-          <div class="explication">
-            <p>
-              Family Event est une application qui planifie et organise un
-              évènement familial.
-            </p>
-
-            <p>
-              Elle simplifie la communication en prenant en compte les avis et
-              les budgets de chacun de manière impartial et anonyme.
-            </p>
-          </div>
+          <div class="family-event">  <span class="magic">
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+              </svg>
+            </span>
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+              </svg>
+            </span>
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+              </svg>
+            </span>
+            <span class="magic-text">Family Event</span>
+          </span> 
+          est une application qui planifie et organise un
+          évènement familial. <br><br>
+          Elle simplifie la communication en prenant en compte les avis et
+          les budgets de chacun de manière impartial et anonyme.
         </div>
+
+        </div>
+      <!-- </div> -->
+    </div>
+
+
+    <div class="trait"></div>
+
+    <div class="mission">
+      
+      <div class="liste">
+        <h2>Projet réalisé étape par étape</h2>
+        <h3>avec la méthode MVP (Minimum Viable Product)</h3>
+
+        <ul>
+          <li>Cerner un problème</li>
+          <li>Trouver une solution</li>
+          <li>Trouver l'idée de plateforme</li>
+          <li>Analyser la concurence</li>
+          <li>Analyser le marché</li>
+          <li>Créer le Wireframes</li>
+          <li>Créer le prototype</li>
+        </ul>
+      </div>
+
+      <div class="marche">
+      <img src="img/projets/family-event/marche.jpg" alt="">
+      </div>
+
+    </div>
+
+    <div class="trait-rose"></div>
+
+    <div class="prototype">
+      <div class="prototype-img">
+        <img src="img/projets/family-event/prototype.jpg" alt="">
+      </div>
+      <div class="prototype-texte">
+        <h2>Prototypage</h2>
+        <p>Notion de design</p>
+        <p>Apprentissage de l'UI/UX</p>
+        <p>Outil utilisé Figma</p>
+        <p>Teste du prototype</p>
+        <p>Création du formulaire de satisfaction</p>
       </div>
     </div>
 
@@ -215,9 +157,8 @@
 
     <div class="secondPart">
       <div class="insideSecondPart">
-        <p>
-          <strong>Skills ></strong> Web design | UI/UX | Figma <br />Projet
-          individuel
+        <p>Projet individuel<br>
+        <strong>Skills ></strong> Web design 
         </p>
         <img
           src="img/projets/family-event/giphy-whitestars.gif"
@@ -230,24 +171,21 @@
       </div>
     </div>
 
-    <div class="trait"></div>
+    <div class="trait-rose"></div>
 
     <div class="galerie">
       <img
         src="img/projets/family-event/Famille.gif"
-        alt="ecran page famille"
-      />
-      <img src="img/projets/family-event/Idées.gif" alt="ecran page idées" />
+        alt="ecran page famille"  class="zoom"/>
+      <img src="img/projets/family-event/Idées.gif" alt="ecran page idées"  class="zoom"/>
       <img
         src="img/projets/family-event/Sondages.gif"
-        alt="ecran page sondage"
-      />
-      <img src="img/projets/family-event/Agenda.gif" alt="ecran page agenda" />
+        alt="ecran page sondage" class="zoom"/>
+      <img src="img/projets/family-event/Agenda.gif" alt="ecran page agenda"  class="zoom"/>
       <img
         src="img/projets/family-event/Finance.gif"
-        alt="ecran page finance"
-      />
-      <img src="img/projets/family-event/Résumé.gif" alt="ecran page résumé" />
+        alt="ecran page finance"  class="zoom"/>
+      <img src="img/projets/family-event/Résumé.gif" alt="ecran page résumé"  class="zoom"/>
     </div>
 
     <footer>
@@ -258,5 +196,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script src="js/family-event.js"></script>
+
+    <!-- Texte effet étoiles -->
+    <script src='https://codepen.io/Hyperplexed/pen/xxYJYjM/54407644e24173ad6019b766443bf2a6.js'></script>
+    <script>
+      let index = 0,
+    interval = 1000;
+
+const rand = (min, max) => 
+  Math.floor(Math.random() * (max - min + 1)) + min;
+
+const animate = star => {
+  star.style.setProperty("--star-left", `${rand(-10, 100)}%`);
+  star.style.setProperty("--star-top", `${rand(-40, 80)}%`);
+
+  star.style.animation = "none";
+  star.offsetHeight;
+  star.style.animation = "";
+}
+
+for(const star of document.getElementsByClassName("magic-star")) {
+  setTimeout(() => {
+    animate(star);
+    
+    setInterval(() => animate(star), 1000);
+  }, index++ * (interval / 3))
+}
+    </script>
   </body>
 </html>

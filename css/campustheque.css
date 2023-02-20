@@ -211,9 +211,9 @@ button {
     display: inline-block;
     margin-left: 55px;
     padding: 25px 0;
-    font-family:'Oswald', sans-serif; 
-    /* border: #3d3c3a 2px solid; */
+    font-family:'Oswald', sans-serif;
     background: #ffffff;
+    box-shadow: 5px 5px 5px rgba(84, 84, 84,0.3);
     border-radius: 5px;
     width: 130px;
     text-align: center;
