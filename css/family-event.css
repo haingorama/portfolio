@@ -515,7 +515,7 @@ to {
 }
 
 .prototype {
-    padding: 100px 0;
+    padding: 100px 0 120px;
     display: flex;
     align-items: center;
     width: 100%;
