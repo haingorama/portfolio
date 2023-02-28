@@ -16,7 +16,7 @@ body {
 #bg-overlay {
     position: absolute;
     width: 100%;
-    height: 650px;
+    height: 600px;
     top: 0;
     left: 0;
     right: 0;
@@ -26,7 +26,7 @@ body {
 }
 section {
     z-index: 1;
-    height: 650px;
+    height: 600px;
     width: 100%;
 }
 section img {
@@ -89,14 +89,20 @@ h4 {
 img {
     width: 100%;
 }
+
+.second-partie {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../img/projets/duel/traits.png");
+    width: 100%;
+}
+
 .planning {
     text-align: center;
     padding: 27px 0 57px;
     width: 100%;
-    background-image: url("../img/projets/duel/31.png");
+    /* background-image: url("../img/projets/duel/pattern.png"); */
     background-size: 36%;
-    /* background-size: cover; */
-    /* background-size: contain; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,7 +116,6 @@ img {
 }
 .planning li {
     text-align: justify;
-    list-style: georgian inside url('../img/projets/duel/supero.png');
     font-size: 2rem;
     font-weight: 900;
 }
@@ -120,7 +125,7 @@ img {
 }
 
 .explication {
-    align-items: center;
+    /* align-items: center; */
     font-weight: 700;
     letter-spacing: 1.8px;
     line-height: 35px;
@@ -130,11 +135,11 @@ img {
     text-align: start;
     padding: 0 4%;
     color: #111111;
-    display: flex;
+    /* display: flex; */
 }
 .texte {
-    width: 40%;
-    padding: 0 60px 0 70px;
+    /* width: 40%; */
+    padding: 90px 60px 0 70px;
     font-size: 1.7rem;
     font-weight: 900;
     letter-spacing: 1.8px;
@@ -142,7 +147,8 @@ img {
     color: white;
 }
 .site {
-    width: 63%;
+    width: 80%;
+    margin: 70px;
 }
 
 .details {

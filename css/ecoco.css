@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800&family=Righteous&display=swap');
+/* font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Righteous', cursive; */
+
+body {
+	margin: 0px;
+}
+
+#container {
+	position: absolute;
+	margin: auto;
+	width: 100vw;
+	top: 0;
+	bottom: 0;
+	filter: url(#threshold) blur(0.6px);
+}
+
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+    font-family: 'Righteous', cursive;
+	font-size: clamp(2rem, 15cqi, 4rem);
+	padding-left: 20px;
+	user-select: none;
+}
+.hero {
+	height: 600px;
+	width: 100%;
+	background-image: url("img/projets/ecoco/beach-coco1.jpg");
+	background-size: cover;
+}
