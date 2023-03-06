@@ -1,264 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Ecoco</title>
 
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'>
-	<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/material-kit.min.css'>
-	<link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css'>
-    <link rel="stylesheet" href="css/ecoco.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/material-kit.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/ecoco.css" />
+  </head>
 
-<body>
+  <body>
+    <a href="" id="ancre"></a>
+    <!--retour ancre-->
 
+    <section
+      class="page-header text-center position-relative banner-section"
+      style="
+        background-image: url('./img/projets/ecoco/coconuts-3836475_1280.jpg');
+      "
+    >
+      <div class="container">
+        <!-- Ancre -->
+        <div class="ancre">
+          <a href="#ancre"
+            ><img src="./img/projets/ecoco/ancre.png" alt=""
+          /></a>
+        </div>
+        <!--Ancre-->
 
-	<section class="page-header text-center position-relative banner-section" style="background-image: url('./img/projets/ecoco/coconuts-3836475_1280.jpg');">
-	<div class="container">
-
-			<!-- Texte animé -->
-			<div id="container-titre">
-				<span id="text1"></span>
-				<span id="text2"></span>
-			</div>
-			<svg id="filters">
-				<defs>
-					<filter id="threshold">
-						<feColorMatrix in="SourceGraphic"
-								type="matrix"
-								values="1 0 0 0 0
+        <!-- Texte animé -->
+        <div id="container-titre">
+          <span id="text1"></span>
+          <span id="text2"></span>
+        </div>
+        <svg id="filters">
+          <defs>
+            <filter id="threshold">
+              <feColorMatrix
+                in="SourceGraphic"
+                type="matrix"
+                values="1 0 0 0 0
 												0 1 0 0 0
 												0 0 1 0 0
-												0 0 0 255 -140" />
-					</filter>
-				</defs>
-			</svg>
+												0 0 0 255 -140"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <!-- Fin text animé -->
 
+        <a
+          href="https://haingorama.github.io/e-commerce_project/"
+          target="_blank"
+        >
+          <img
+            class="logo"
+            src="./img/projets/ecoco/logo.png"
+            alt="image du logo"
+          />
+        </a>
 
-		<h1 class="title">Création d'une page d'accueil<br> d'un site e-commerce</h1>
-		<h3>Compétence HTML/CSS & Webdesign </h3>
-	</div>
-	</section>
+        <h1 class="title">
+          Création d'une page d'accueil<br />
+          d'un site e-commerce
+        </h1>
+        <h3>Compétence HTML/CSS & Webdesign</h3>
+        <a
+          class="btn btn-round btn-sm mt-4"
+          href="https://haingorama.github.io/e-commerce_project/"
+          role="button"
+          target="_blank"
+          >Lien vers le site</a
+        >
+      </div>
+    </section>
 
-	<main class="main main-raised">
-	<section class="section text-center">
-		<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-10">
-			<h2 class="title mb-4" data-aos="fade-up">Objectif du projet</h2>
-			<p data-aos="fade-up">Ce projet de création d'un site e-commerce doit prendre en compte plusieurs facteurs.</p>
-			<p data-aos="fade-up">Concevoir et réaliser la page d'acceuil d'un site e-commerce fictif. Le concept du site doit être imaginé comme le nom de l'entreprise, les marchandises vendues, la clientèle ciblée etc...</p>
+    <main class="main main-raised">
+      <section class="section text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+              <h2 class="title mb-4" data-aos="fade-up">Objectif du projet</h2>
+              <p data-aos="fade-up">
+                Ce projet de création d'un site e-commerce doit prendre en
+                compte plusieurs facteurs.
+              </p>
+              <p data-aos="fade-up">
+                Concevoir et réaliser la page d'acceuil d'un site e-commerce
+                fictif. Le concept du site doit être imaginé comme le nom de
+                l'entreprise, les marchandises vendues, la clientèle ciblée
+                etc...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+              <h2 class="title mb-4" data-aos="fade-up">
+                Contenu du projet à la livraison
+              </h2>
+              <ul
+                class="nav nav-pills nav-pills-rose justify-content-center mt-5"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="pills-documentation-tab"
+                    data-toggle="pill"
+                    href="#pills-documentation"
+                    role="tab"
+                    aria-controls="pills-documentation"
+                    aria-selected="true"
+                    data-aos="fade-up"
+                    >Documentation</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-maquettes-tab"
+                    data-toggle="pill"
+                    href="#pills-maquettes"
+                    role="tab"
+                    aria-controls="pills-maquettes"
+                    aria-selected="false"
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                    >Maquettes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="pills-accueil-tab"
+                    data-toggle="pill"
+                    href="#pills-accueil"
+                    role="tab"
+                    aria-controls="pills-accueil"
+                    aria-selected="false"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    >La page d'accueil</a
+                  >
+                </li>
+              </ul>
 
-			</div>
-		</div>
-		</div>
-	</section>
-	<section class="section text-center">
-		<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-10">
-			<h2 class="title mb-4" data-aos="fade-up">Cities to visit...</h2>
-			<ul class="nav nav-pills nav-pills-rose justify-content-center mt-5" role="tablist">
-				<li class="nav-item">
-				<a class="nav-link active" id="pills-edinburgh-tab" data-toggle="pill" href="#pills-edinburgh" role="tab" aria-controls="pills-edinburgh" aria-selected="true" data-aos="fade-up">Edinburgh</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" id="pills-glasgow-tab" data-toggle="pill" href="#pills-glasgow" role="tab" aria-controls="pills-glasgow" aria-selected="false" data-aos="fade-up" data-aos-delay="150">Glasgow</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" id="pills-aberdeen-tab" data-toggle="pill" href="#pills-aberdeen" role="tab" aria-controls="pills-aberdeen" aria-selected="false" data-aos="fade-up" data-aos-delay="300">Aberdeen</a>
-				</li>
-			</ul>
-			<div class="tab-content tab-space pb-0">
-				<div class="tab-pane active" id="pills-edinburgh" role="tabpanel" aria-labelledby="pills-edinburgh-tab">
-				<p data-aos="fade-up">Edinburgh is the capital of Scotland and one of its 32 council areas. Historically part of the county of Midlothian (interchangeably Edinburghshire before 1921), it is located in Lothian on the Firth of Forth's southern shore.</p>
-				<p data-aos="fade-up">Recognised as the capital of Scotland since at least the 15th century, Edinburgh is the seat of the Scottish Government, the Scottish Parliament and the supreme courts of Scotland. The city's Palace of Holyroodhouse is the official residence
-					of the monarch in Scotland. The city has long been a centre of education, particularly in the fields of medicine, Scots law, literature, philosophy, the sciences and engineering. It is the second largest financial centre in the United
-					Kingdom (after London) and the city's historical and cultural attractions have made it the United Kingdom's second most popular tourist destination attracting 1.75 million visits from overseas in 2016.</p>
-				<a class="btn btn-round btn-sm mt-4" href="https://en.wikipedia.org/wiki/Edinburgh" role="button" target="_blank" data-aos="fade-up">LEARN MORE</a>
-				</div>
-				<div class="tab-pane" id="pills-glasgow" role="tabpanel" aria-labelledby="pills-glasgow-tab">
-				<p>Glasgow is the most populous city in Scotland, and the third most populous city in the United Kingdom, as of the 2017 estimated city population of 621,020. Historically part of Lanarkshire, the city now forms the Glasgow City council area,
-					one of the 32 council areas of Scotland; the local authority is Glasgow City Council. Glasgow is situated on the River Clyde in the country's West Central Lowlands. It is the fifth most visited city in the UK.</p>
-				<p>Inhabitants of the city are referred to formally as "Glaswegians" or "Weegies". Glasgow is also known for the Glasgow patter, a distinct dialect of the Scots language that is noted for being difficult to understand by those from outside
-					the city.</p>
-				<a class="btn btn-round btn-sm mt-4" href="https://en.wikipedia.org/wiki/Glasgow" role="button" target="_blank">LEARN MORE</a>
-				</div>
-				<div class="tab-pane" id="pills-aberdeen" role="tabpanel" aria-labelledby="pills-aberdeen-tab">
-				<p>Aberdeen is a city in northeast Scotland. It is Scotland's third most populous city, one of Scotland's 32 local government council areas and the United Kingdom's 39th most populous built-up area, with an official population estimate of 196,670
-					for the city of Aberdeen and 227,560 for the local council area.</p>
-				<a class="btn btn-round btn-sm mt-4" href="https://en.wikipedia.org/wiki/Aberdeen" role="button" target="_blank">LEARN MORE</a>
-				</div>
-			</div>
-			</div>
-		</div>
-		</div>
-	</section>
-	<section class="section text-center">
-		<div class="container">
-		<h2 class="title mb-4" data-aos="fade-up">Beautiful places...</h2>
-		<div class="card-columns text-white">
-			<div class="card bg-dark" data-aos="fade-right">
-			<img class="card-img" src="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Card image">
-			<div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
-				<h4 class="card-title">Edinburgh</h4>
-				<p class="card-text mt-0">Calton Hill, Edinburgh, United Kingdom</p>
-			</div>
-			</div>
-			<div class="card bg-dark" data-aos="fade-right">
-			<img class="card-img" src="https://images.unsplash.com/photo-1571936697695-786a86657299?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" alt="Card image">
-			<div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
-				<h4 class="card-title">Scotland, UK</h4>
-			</div>
-			</div>
-			<div class="card bg-dark" data-aos="fade-right">
-			<img class="card-img" src="https://images.unsplash.com/photo-1551625864-e63ab48154a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80" alt="Card image">
-			<div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
-				<h4 class="card-title">Isle of Skye, Scotland</h4>
-			</div>
-			</div>
-			<div class="card bg-dark" data-aos="fade-left">
-			<img class="card-img" src="https://images.unsplash.com/photo-1470478626242-c4f9af4585f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Card image">
-			<div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
-				<h4 class="card-title">Spean Bridge, Scotland, United Kingdom</h4>
-				<p class="card-text mt-0">Forest path in Scotland</p>
-			</div>
-			</div>
-			<div class="card bg-dark" data-aos="fade-left">
-			<img class="card-img" src="https://images.unsplash.com/photo-1573667575455-0710e2a3d692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Card image">
-			<div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
-				<h4 class="card-title">Scotland, UK</h4>
-			</div>
-			</div>
-			<div class="card bg-dark" data-aos="fade-left">
-			<img class="card-img" src="https://images.unsplash.com/photo-1571670954858-176b0731cda5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Card image">
-			<div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
-				<h4 class="card-title">Highland, Scotland, Royaume-Uni</h4>
-			</div>
-			</div>
-		</div>
-		</div>
-	</section>
+              <div class="tab-content tab-space pb-0">
+                <div
+                  class="tab-pane active"
+                  id="pills-documentation"
+                  role="tabpanel"
+                  aria-labelledby="pills-documentation-tab"
+                >
+                  <p data-aos="fade-up">
+                    Le texte présentant le projet doit être composé de deux
+                    parties :<br />
+                    - une partie présentant le concept de l’entreprise (nom de
+                    l’entreprise, type de marchandises vendues, clientèle
+                    principale et secondaire ciblée)<br />
+                    - une partie justifiant les choix esthétiques de la page
+                    d’accueil (choix des couleurs et polices de caractères,
+                    disposition des textes et des images, etc.).
+                  </p>
+                  <p data-aos="fade-up">
+                    Ce texte doit être rédigé en utilisant la police de
+                    caractères Arial de taille 12 et être livré au format pdf (2
+                    pages A4 maximum.
+                  </p>
+                  <a
+                    class="btn btn-round btn-sm mt-4"
+                    href="./sources/docuentation-Ecoco.pdf"
+                    rel="prettyPhoto[iframes]"
+                    title="Add description here (optional)"
+                    target="_blank"
+                    >Voir le document</a
+                  >
+                </div>
 
+                <div
+                  class="tab-pane"
+                  id="pills-maquettes"
+                  role="tabpanel"
+                  aria-labelledby="pills-maquettes-tab"
+                >
+                  <p>
+                    Deux maquettes de la page d’accueil doivent être créées :<br />
+                    - Une maquette doit correspondre à la version mobile de la
+                    page<br />
+                    - Une maquette doit correspondre à la version desktop de la
+                    page
+                  </p>
+                  <p>
+                    Ces maquettes doivent être réalisées en respectant les
+                    contraintes suivantes :<br />
+                    - Utilisation de 3 couleurs au maximum (avec possibilité de
+                    les décliner sur maximum 3 teintes)<br />
+                    - Utilisation de 3 polices de caractères au maximum<br />
+                  </p>
 
-	</main>
-	
-	<footer class="py-4 page-footer">
-	<div class="container text-center">
-		<div class="row justify-content-between">
-		<div class="col-auto">Photos from <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></div>
-		<div class="col-auto">
-			<small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">George Martsoukos</a> & <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a> 
-			</small>
-		</div>
-		</div>
-	</div>
-	</footer>
+                  <p>
+                    Les maquettes doivent être créées en utilisant un logiciel
+                    de maquettage (Sketch, AdobeXD, Figma, Illustrator, etc.),
+                    leur intégration en HTML / CSS doit avoir un rendu visuel
+                    très proche de la maquette que vous aurez créé (haute
+                    fidélité). Sur la maquette, nous devons retrouver tous les
+                    éléments graphiques spécifiés ci-après dans le chapitre
+                    “Contenu de la page d’accueil”.
+                  </p>
+                </div>
 
-	<button class="btn btn-rose btn-fab btn-fab-mini btn-round position-fixed back-to-top is-hidden">
-	<i class="material-icons">keyboard_arrow_up</i>
-	</button>
+                <div
+                  class="tab-pane liste-page-accueil"
+                  id="pills-accueil"
+                  role="tabpanel"
+                  aria-labelledby="pills-accueil-tab"
+                >
+                  <ul>
+                    La page d’accueil devra être composée au minimum des
+                    éléments suivant :
+                    <li>Barre de navigation fixe</li>
+                    <li>
+                      Header avec une image en background + H1 + call to action
+                    </li>
+                    <li>Catégories des produits en vente</li>
+                    <li>Zone permettant la sélection de 3 ou 4 produits</li>
+                    <li>Bandeau promotionnel</li>
+                    <li>
+                      Une rangée d’icônes présentant 3 avantages de l’entreprise
+                    </li>
+                    <li>Footer en 3 ou 4 colonnes</li>
+                    <li>Ancre positionnée en bas à droite de l’écran</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section text-center">
+        <div class="container">
+          <h2 class="title mb-4" data-aos="fade-up">Wireframe & Maquettes</h2>
+          <div class="card-columns text-white">
+            <div class="card bg-dark" data-aos="fade-right">
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                alt="Card image"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+              >
+                <h4 class="card-title">Edinburgh</h4>
+                <p class="card-text mt-0">
+                  Calton Hill, Edinburgh, United Kingdom
+                </p>
+              </div>
+            </div>
+            <div class="card bg-dark" data-aos="fade-right">
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1571936697695-786a86657299?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80"
+                alt="Card image"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+              >
+                <h4 class="card-title">Scotland, UK</h4>
+              </div>
+            </div>
+            <div class="card bg-dark" data-aos="fade-right">
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1551625864-e63ab48154a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80"
+                alt="Card image"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+              >
+                <h4 class="card-title">Isle of Skye, Scotland</h4>
+              </div>
+            </div>
+            <div class="card bg-dark" data-aos="fade-left">
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1470478626242-c4f9af4585f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                alt="Card image"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+              >
+                <h4 class="card-title">
+                  Spean Bridge, Scotland, United Kingdom
+                </h4>
+                <p class="card-text mt-0">Forest path in Scotland</p>
+              </div>
+            </div>
+            <div class="card bg-dark" data-aos="fade-left">
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1573667575455-0710e2a3d692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                alt="Card image"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+              >
+                <h4 class="card-title">Scotland, UK</h4>
+              </div>
+            </div>
+            <div class="card bg-dark" data-aos="fade-left">
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/photo-1571670954858-176b0731cda5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                alt="Card image"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column align-items-center justify-content-center"
+              >
+                <h4 class="card-title">Highland, Scotland, Royaume-Uni</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/bootstrap-material-design.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/material-kit.min.js'></script>
-<script src='https://unpkg.com/aos@next/dist/aos.js'></script><script  src="js/ecoco.js"></script>
+    <footer class="py-4 page-footer">
+      <div class="container text-center">
+        <div class="row justify-content-between">
+          <div class="col-auto">
+            Photos from
+            <a href="https://unsplash.com/" target="_blank">Unsplash.com</a>
+          </div>
+          <div class="col-auto">
+            <small
+              >Made with <span>❤</span> by
+              <a href="http://georgemartsoukos.com/" target="_blank"
+                >George Martsoukos</a
+              >
+              &
+              <a href="https://www.creative-tim.com/" target="_blank"
+                >Creative Tim</a
+              >
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-<!-- Texte animé -->
-<script>
-	
-	const elts = {
-	text1: document.getElementById("text1"),
-	text2: document.getElementById("text2") };
-	
-	const texts = [
-	"Bienvenue",
-	"au projet",
-	"site web",
-	"e-commerce",
-	"\"Ecoco\""];
-	
-	// Controls the speed of morphing.
-	const morphTime = 1;
-	const cooldownTime = 0.25;
-	
-	let textIndex = texts.length - 1;
-	let time = new Date();
-	let morph = 0;
-	let cooldown = cooldownTime;
-	
-	elts.text1.textContent = texts[textIndex % texts.length];
-	elts.text2.textContent = texts[(textIndex + 1) % texts.length];
-	
-	function doMorph() {
-	morph -= cooldown;
-	cooldown = 0;
-	
-	let fraction = morph / morphTime;
-	
-	if (fraction > 1) {
-		cooldown = cooldownTime;
-		fraction = 1;
-	}
-	
-	setMorph(fraction);
-	}
-	
-	// A lot of the magic happens here, this is what applies the blur filter to the text.
-	function setMorph(fraction) {
-	// fraction = Math.cos(fraction * Math.PI) / -2 + .5;
-	
-	elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-	elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
-	
-	fraction = 1 - fraction;
-	elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-	elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
-	
-	elts.text1.textContent = texts[textIndex % texts.length];
-	elts.text2.textContent = texts[(textIndex + 1) % texts.length];
-	}
-	
-	function doCooldown() {
-	morph = 0;
-	
-	elts.text2.style.filter = "";
-	elts.text2.style.opacity = "100%";
-	
-	elts.text1.style.filter = "";
-	elts.text1.style.opacity = "0%";
-	}
-	
-	// Animation loop, which is called every frame.
-	function animate() {
-	requestAnimationFrame(animate);
-	
-	let newTime = new Date();
-	let shouldIncrementIndex = cooldown > 0;
-	let dt = (newTime - time) / 1000;
-	time = newTime;
-	
-	cooldown -= dt;
-	
-	if (cooldown <= 0) {
-		if (shouldIncrementIndex) {
-		textIndex++;
-		}
-	
-		doMorph();
-	} else {
-		doCooldown();
-	}
-	}
-	
-	// Start the animation.
-	animate();
-</script>
+    <button
+      class="btn btn-rose btn-fab btn-fab-mini btn-round position-fixed back-to-top is-hidden"
+    >
+      <i class="material-icons">keyboard_arrow_up</i>
+    </button>
 
-</body>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/bootstrap-material-design.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/material-kit.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/ecoco.js"></script>
 
+    <!-- Texte animé -->
+    <script>
+      const elts = {
+        text1: document.getElementById("text1"),
+        text2: document.getElementById("text2"),
+      };
+
+      const texts = [
+        "Bienvenue",
+        "au projet",
+        "site web",
+        "e-commerce",
+        '"Ecoco"',
+      ];
+
+      // Controls the speed of morphing.
+      const morphTime = 1;
+      const cooldownTime = 0.25;
+
+      let textIndex = texts.length - 1;
+      let time = new Date();
+      let morph = 0;
+      let cooldown = cooldownTime;
+
+      elts.text1.textContent = texts[textIndex % texts.length];
+      elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+
+      function doMorph() {
+        morph -= cooldown;
+        cooldown = 0;
+
+        let fraction = morph / morphTime;
+
+        if (fraction > 1) {
+          cooldown = cooldownTime;
+          fraction = 1;
+        }
+
+        setMorph(fraction);
+      }
+
+      // A lot of the magic happens here, this is what applies the blur filter to the text.
+      function setMorph(fraction) {
+        // fraction = Math.cos(fraction * Math.PI) / -2 + .5;
+
+        elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+        elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+        fraction = 1 - fraction;
+        elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+        elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+        elts.text1.textContent = texts[textIndex % texts.length];
+        elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+      }
+
+      function doCooldown() {
+        morph = 0;
+
+        elts.text2.style.filter = "";
+        elts.text2.style.opacity = "100%";
+
+        elts.text1.style.filter = "";
+        elts.text1.style.opacity = "0%";
+      }
+
+      // Animation loop, which is called every frame.
+      function animate() {
+        requestAnimationFrame(animate);
+
+        let newTime = new Date();
+        let shouldIncrementIndex = cooldown > 0;
+        let dt = (newTime - time) / 1000;
+        time = newTime;
+
+        cooldown -= dt;
+
+        if (cooldown <= 0) {
+          if (shouldIncrementIndex) {
+            textIndex++;
+          }
+
+          doMorph();
+        } else {
+          doCooldown();
+        }
+      }
+
+      // Start the animation.
+      animate();
+    </script>
+  </body>
 </html>
