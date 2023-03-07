@@ -14,7 +14,7 @@
 	display: inline-block;
     font-family: 'Righteous', cursive;
 	font-size: 2.5rem;
-	top: 20px;
+	top: 60px;
 	left: 20px;
 	user-select: none;
 	/* color: #384328; */
@@ -105,10 +105,6 @@ p, .liste-page-accueil {
 	font-size: 22px;
 }
 
-.card-img-overlay {
-	background: rgba(0, 0, 0, 0.3);
-}
-
 .liste-page-accueil {
 	text-align: justify;
 }
@@ -163,11 +159,11 @@ p, .liste-page-accueil {
 
 .banner-section .container {
 	z-index: 4;
-	position: absolute;
-	/* position: relative; */
+	/* position: absolute; */
+	position: relative;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: -76px;;
 }
 
 .main {
