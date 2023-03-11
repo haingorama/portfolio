@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Page projet maze</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Karla:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./css/maze.css">
+</head>
+
+<body>
+    <div class="marquee-container">
+        <div class="marquee marquee--top">
+            <div></div>
+        </div>
+        <div class="marquee marquee--right">
+            <div></div>
+        </div>
+        <div class="marquee marquee--bottom">
+            <div></div>
+        </div>
+        <div class="marquee marquee--left">
+            <div></div>
+        </div>
+    </div>
+
+    <main class="page-content">
+
+<p><span style="font-family: 'Lucida Console'; line-height: 14px; font-size: 14px; display: inline-block; color: #3366ff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;______&nbsp;____&nbsp;&nbsp;&nbsp;______&nbsp;&nbsp;________&nbsp;&nbsp;______&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_______|&nbsp;▓▓____&nbsp;&nbsp;<br />|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;<br />|&nbsp;▓▓▓▓▓▓\▓▓▓▓\&nbsp;\▓▓▓▓▓▓\\▓▓▓▓▓▓▓▓&nbsp;&nbsp;▓▓▓▓▓▓\&nbsp;&nbsp;|&nbsp;&nbsp;▓▓▓▓▓▓▓&nbsp;▓▓▓▓▓▓▓\<br />|&nbsp;▓▓&nbsp;|&nbsp;▓▓&nbsp;|&nbsp;▓▓/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;▓▓|&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;&nbsp;&nbsp;\▓▓&nbsp;&nbsp;&nbsp;&nbsp;\|&nbsp;▓▓&nbsp;&nbsp;|&nbsp;▓▓<br />|&nbsp;▓▓&nbsp;|&nbsp;▓▓&nbsp;|&nbsp;▓▓&nbsp;&nbsp;▓▓▓▓▓▓▓/&nbsp;&nbsp;▓▓▓▓_|&nbsp;▓▓▓▓▓▓▓▓__&nbsp;_\▓▓▓▓▓▓\&nbsp;▓▓&nbsp;&nbsp;|&nbsp;▓▓<br />|&nbsp;▓▓&nbsp;|&nbsp;▓▓&nbsp;|&nbsp;▓▓\▓▓&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;\\▓▓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;▓▓&nbsp;&nbsp;|&nbsp;▓▓<br />&nbsp;\▓▓&nbsp;&nbsp;\▓▓&nbsp;&nbsp;\▓▓&nbsp;\▓▓▓▓▓▓▓\▓▓▓▓▓▓▓▓&nbsp;\▓▓▓▓▓▓▓\▓▓\▓▓▓▓▓▓▓&nbsp;\▓▓&nbsp;&nbsp;&nbsp;\▓▓<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /></span></p>
+
+        <section class="page-content__section" data-bg-color="#2A0321">
+            <h2>Le jeu du <u>labyrinthe</u></h2>
+
+            <p>But du projet > écrire un jeu textuel dans lequel le joueur est enfermé dans un layrinthe. Découvre le script dans <a href="https://github.com/haingorama/scriptProjet/blob/main/maze.sh" target="_blank">GitHub</a>.</p>
+        </section>
+
+        <section class="page-content__section" data-bg-color="#2A0321">
+            <h2>But du jeu</h2>
+
+            <p>Le joueur commence dans la pièce 2, la sortie se trouve dans la pièce 6 mais si le joueur va dans la pièce 4 il meurt.</p>
+
+
+<div class="deux-parties">
+    <div class="texte">
+        <p>Pour se déplacé de pièce en pièce on doit utiliser les touches: </p>
+            <ul> 
+                <li>n = nord</li>
+                <li>s = sud</li>
+                <li>w = ouest</li>
+                <li>e = est</li>
+            </ul>
+    </div>
+
+    <div class="image">
+        <img src="./img/projets/maze/plan.png" alt="plan du jeu maze">
+    </div>
+</div>
+
+
+
+        </section>
+
+        <section class="page-content__section gif-section" data-bg-color="#0B0B0B">
+            <h2>Projet en image</h2>
+
+            <p>Projet individuel</p>
+            <img src="./img/projets/maze/maze-gif.gif" alt="gif du jeu">            
+        </section>
+
+        <footer>
+            <small>
+                &copy; 2023 Haingo Ramaroson <span>❤</span>
+            </small>
+        </footer>
+
+        <!-- <section class="page-content__section" data-bg-color="#0B0B0B">
+            <h2>Chill all day and night</h2>
+
+            <p>Chew some gum. Studies have shown that we can reduce a significant amount of stress by chewing gum. Pop a stick of that winter fresh if you’re just not feeling calm in the moment.</p>
+
+            <p>Evaluate how much this matters. Think about how much your problem matters in the grand scheme of things. Will it still affect you a year from now? Does it even help to be so hard on yourself? If you made it out alive, chances are you’ll find a way to get through it and move on to more happiness and hardships.</p>
+
+            <p>Do what your grandma would do. By the time we’re much older, we usually don’t get so worried when things don’t go our way, because we get used to it. Think of how your grandma would react in a situation and do that. She’d probably say something funny and then move on to the next thing, which is really the best thing to do if you want to stay sane.</p>
+        </section> -->
+
+
+    </main>
+
+    <!-- partial -->
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script><script  src="./js/maze.js"></script>
+
+</body>
+</html>
