@@ -105,12 +105,10 @@ section {
 	height: 50px;
 }
 .navbar-haingo .primary-menu {
-	/* margin-top: -7px; */
 	margin-left: -15px;
 	margin-right: -15px;
 }
 .navbar-haingo .navbar-collapse {
-	/* background: rgb(255, 255, 255); */
 }
 .navbar-haingo .navbar-header{
 	height: 30px;
@@ -178,7 +176,6 @@ section {
     width: 100%;
     height: 100%;
     display: block;
-    /* padding: 50px 0; */
 }
 
 /* ----------------------------------------------------------- */
