@@ -30,7 +30,7 @@ a           {text-decoration: none;}
 a:link      {color: black}
 a:visited   {color: black}
 a:hover     {color: black}
-a:active    {color: #9b6bdd}
+a:active    {color: #000}
 a:focus     {color: #000}
 
 p,h6, address {
@@ -132,7 +132,8 @@ nav.top-right {
 	transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
 }
 .menu-l1 .letter, .menu-l2 .letter, .menu-l3 .letter, .curved-14 .letter, .curved-15 .letter, .curved-16 .letter {
-	color: rgb(10, 10, 11);
+	/* color: rgb(255, 255, 255); */
+	color: #E3E6F5;
 }
 .open .disc {
 	pointer-events: auto;
@@ -145,21 +146,21 @@ nav.top-right {
     left: 0px;
     right: 59px;
     bottom: 2px;
-	background: rgb(28, 111, 255);
+	background: #5b007f77;
 	transition-delay: 0s;
 }
 .open .l1 {
 	transition-delay: 0s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 176deg);
+	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 181deg);
 	opacity: 1;
 }
 .open .l1:hover {
-	background: shade(tomato, 90%);
+	background: shade(#8b44ee, 90%);
 	color: tomato;
 	transition-delay: 0s;
 }
 .open .l1:active {
-	background: shade(tomato, 50%);
+	background: shade(#8b44ee, 50%);
 	color: tomato;
 }
 .open .l1.toggle {
@@ -167,7 +168,7 @@ nav.top-right {
 }
 .menu-l1 .letter {
 	position: absolute;
-	height: 39%;
+	height: 36%;
 	bottom: 0;
     padding: 0 4px;
 	display: grid;
@@ -176,41 +177,41 @@ nav.top-right {
     left: 171px;
 }
 div.curved-11 {
-    transform: rotate(170deg);
-    height: 577px;
-    width: 581px;
+	transform: rotate(170deg);
+    height: 586px;
+    width: 552px;
 }
 .curved-11 {
     position: relative;
-    right: 168px;
-    bottom: -8px;
+	right: 155px;
+    bottom: 9px;
 }
 .curved-11 > .letter:nth-child(1) {
-	transform: rotate(44deg) rotateX(15deg);
+	transform: rotate(46deg) rotateX(14deg);
 }
 .curved-11 > .letter:nth-child(2) {
-	transform: rotate(39deg) rotateX(14deg);
+	transform: rotate(41deg) rotateX(16deg);
 }
 .curved-11 > .letter:nth-child(3) {
-	transform: rotate(34deg) rotateX(14deg);
+	transform: rotate(35deg) rotateX(-19deg);
 }
 .curved-11 > .letter:nth-child(4) {
-	transform: rotate(29deg) rotateX(14deg);
+	transform: rotate(30deg) rotateX(-21deg);
 }
 .curved-11 > .letter:nth-child(5) {
-	transform: rotate(24deg) rotateX(-13deg);
+	transform: rotate(24deg) rotateX(-22deg);
 }
 .curved-11 > .letter:nth-child(6) {
-	transform: rotate(20deg) rotateX(12deg);
+	transform: rotate(19deg) rotateX(-23deg);
 }
 .curved-11 > .letter:nth-child(7) {
-	transform: rotate(15deg) rotateX(13deg);
+	transform: rotate(13deg) rotateX(25deg);
 }
 .curved-11 > .letter:nth-child(8) {
-	transform: rotate(10deg) rotateX(13deg);
+	transform: rotate(8deg) rotateX(26deg);
 }
 .curved-11 > .letter:nth-child(9) {
-	transform: rotate(6deg) rotateX(0deg);
+	transform: rotate(4deg) rotateX(-24deg);
 	padding-right: 90px;
 }
 
@@ -220,21 +221,21 @@ div.curved-11 {
     left: 32px;
     right: 92px;
     bottom: 32px;
-	background: rgb(71, 255, 83);
+	background: #5b007f77;
 	transition-delay: 0s;
 }
 .open .l2 {
 	transition-delay: 0s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 188deg);
+	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 196deg);
 	opacity: 1;
 }
 .open .l2:hover {
-	background: shade(tomato, 90%);
+	background: shade(#8b44ee, 90%);
 	color: tomato;
 	transition-delay: 0s;
 }
 .open .l2:active {
-	background: shade(tomato, 50%);
+	background: shade(#8b44ee, 50%);
 	color: tomato;
 }
 .open .l2.toggle {
@@ -242,7 +243,7 @@ div.curved-11 {
 }
 .menu-l2 .letter {
 	position: absolute;
-	height: 63%;
+	height: 58%;
 	bottom: 0;
     padding: 0 4px;
 	display: grid;
@@ -250,35 +251,35 @@ div.curved-11 {
 	transform-origin: top;
 }
 div.curved-12 {
-    transform: rotate(170deg);
+    transform: rotate(160deg);
     height: 339px;
-    width: 330px;
+    width: 348px;
 }
 .curved-12 {
     position: relative;
     right: 168px;
-    bottom: -9px;
+    bottom: -41px;
 }
 .curved-12 > .letter:nth-child(1) {
-	transform: rotate(43deg) rotateX(8deg);
+	transform:rotate(46deg) rotateX(16deg);
 }
 .curved-12 > .letter:nth-child(2) {
-	transform: rotate(39deg) rotateX(7deg);
+	transform: rotate(41deg) rotateX(16deg);
 }
 .curved-12 > .letter:nth-child(3) {
-	transform: rotate(34deg) rotateX(11deg);
+	transform:rotate(36deg) rotateX(18deg);
 }
 .curved-12 > .letter:nth-child(4) {
-	transform: rotate(29deg) rotateX(13deg);
+	transform: rotate(31deg) rotateX(18deg);
 }
 .curved-12 > .letter:nth-child(5) {
-	transform: rotate(23deg) rotateX(-16deg);
+	transform: rotate(25deg) rotateX(-20deg);
 }
 .curved-12 > .letter:nth-child(6) {
-	transform: rotate(18deg) rotateX(18deg);
+	transform: rotate(19deg) rotateX(21deg);
 }
 .curved-12 > .letter:nth-child(7) {
-	transform: rotate(13deg) rotateX(20deg);
+	transform: rotate(13deg) rotateX(22deg);
 }
 .curved-12 > .letter:nth-child(8) {
 	transform: rotate(9deg) rotateX(22deg);
@@ -294,23 +295,23 @@ div.curved-12 {
 .l3 {
     top: 83px;
     right: 129px;
-    background: rgb(191, 255, 71);
+    background: #5b007f77;
     /* transition-delay: 0s; */
     height: 294px;
-    width: 294px;
+    width: 295px;
 }
 .open .l3 {
 	transition-delay: 0s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 96deg);
+	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1,93deg);
 	opacity: 1;
 }
 .open .l3:hover {
-	background: shade(tomato, 90%);
+	background: shade(#8b44ee, 90%);
 	color: tomato;
 	transition-delay: 0s;
 }
 .open .l3:active {
-	background: shade(tomato, 50%);
+	background: shade(#8b44ee, 50%);
 	color: tomato;
 }
 .open .l3.toggle {
@@ -318,7 +319,7 @@ div.curved-12 {
 }
 .menu-l3 .letter {
 	position: absolute;
-	height: 63%;
+	height: 57%;
 	bottom: 0;
     padding: 0 4px;
 	display: grid;
@@ -336,16 +337,16 @@ div.curved-13 {
     top: -50px;
 }
 .curved-13 > .letter:nth-child(1) {
-	transform: rotate(60deg) rotateX(23deg);
+	transform: rotate(60deg) rotateX(15deg);
 }
 .curved-13 > .letter:nth-child(2) {
-	transform: rotate(50deg) rotateX(23deg);
+	transform: rotate(50deg) rotateX(17deg);
 }
 .curved-13 > .letter:nth-child(3) {
-	transform: rotate(40deg) rotateX(22deg);
+	transform: rotate(40deg) rotateX(18deg);
 }
 .curved-13 > .letter:nth-child(4) {
-	transform: rotate(30deg) rotateX(23deg);
+	transform: rotate(30deg) rotateX(20deg);
 }
 .curved-13 > .letter:nth-child(5) {
 	transform: rotate(20deg) rotateX(18deg);
@@ -363,23 +364,23 @@ div.curved-13 {
     left: 98px;
     right: 157px;
     bottom: 95px;
-    background: #ff7a39;
+    background: #5b007f77;
     transition-delay: 0.1s;
     width: 232px;
     height: 232px;
 }
 .open .l4 {
 	transition-delay: 0.1s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 175deg);
+	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 191deg);
 	opacity: 1;
 }
 .open .l4:hover {
-	background: shade(#ff7a39, 90%);
+	background: shade(#8b44ee, 90%);
 	color: #ff7a39;
 	transition-delay: 0s;
 }
 .open .l4:active {
-	background: shade(#ff7a39, 50%);
+	background: shade(#8b44ee, 50%);
 	color: #ff7a39;
 }
 .open .l4.toggle {
@@ -402,28 +403,28 @@ div.curved-14 {
 .curved-14 {
     position: relative;
     right: 108px;
-    top: -16px;
+    top: -19px;
 }
 .curved-14 > .letter:nth-child(1) {
-	transform: rotate(63deg) rotateX(0deg);
+	transform: rotate(63deg) rotateX(-14deg);
 }
 .curved-14 > .letter:nth-child(2) {
-	transform: rotate(53deg) rotateX(9deg);
+	transform: rotate(53deg) rotateX(18deg);
 }
 .curved-14 > .letter:nth-child(3) {
-	transform: rotate(42deg) rotateX(13deg);
+	transform: rotate(42deg) rotateX(21deg);
 }
 .curved-14 > .letter:nth-child(4) {
-	transform: rotate(30deg) rotateX(19deg);
+	transform: rotate(30deg) rotateX(24deg);
 }
 .curved-14 > .letter:nth-child(5) {
-	transform: rotate(20deg) rotateX(20deg);
+	transform: rotate(20deg) rotateX(25deg);
 }
 .curved-14 > .letter:nth-child(6) {
-	transform: rotate(10deg) rotateX(22deg);
+	transform: rotate(10deg) rotateX(25deg);
 }
 .curved-14 > .letter:nth-child(7) {
-	transform: rotate(0deg) rotateX(22deg);
+	transform: rotate(0deg) rotateX(24deg);
 }
 .curved-14 > .letter:nth-child(8) {
 	transform: rotate(-10deg) rotateX(22deg);
@@ -444,21 +445,21 @@ div.curved-14 {
     left: 126px;
     right: 189px;
     bottom: 125px;
-	background: #2bf1ff;
+	background: #46016159;
 	transition-delay: 0.2s;
 }
 .open .l5 {
 	transition-delay: 0.2s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 191deg);
+	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 216deg);
 	opacity: 1;
 }
 .open .l5:hover {
-	background: shade(#ff912b, 90%);
+	background: shade(#8b44ee, 90%);
 	color: #ff912b;
 	transition-delay: 0s;
 }
 .open .l5:active {
-	background: shade(#ff912b, 50%);
+	background: shade(#8b44ee, 50%);
 	color: #ff912b;
 }
 .open .l5.toggle {
@@ -474,14 +475,14 @@ div.curved-14 {
 	transform-origin: top;
 }
 div.curved-15 {
-    transform: rotate(-190deg);
+    transform: rotate(-191deg);
     height: 160px;
     width: 177px;
 }
 .curved-15 {
     position: relative;
     right: 89px;
-    top: 2px;
+    top: 5px;
 }
 .curved-15 > .letter:nth-child(1) {
 	transform: rotate(61deg) rotateX(15deg);
@@ -523,21 +524,21 @@ div.curved-15 {
     left: 158px;
     right: 219px;
     bottom: 154px;
-	background: #ffa91c;
+	background: #23003051;
 	transition-delay: 0.3s;
 }
 .open .l6 {
 	transition-delay: 0.3s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 184deg);
+	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 196deg);
 	opacity: 1;
 }
 .open .l6:hover {
-	background: shade(#ffa91c, 90%);
+	background: shade(#8b44ee, 90%);
 	color: #ee1a1a;
 	transition-delay: 0s;
 }
 .open .l6:active {
-	background: shade(#ffa91c, 50%);
+	background: shade(#8b44ee, 50%);
 	color: #ffa91c;
 }
 .open .l6.toggle {
@@ -575,13 +576,13 @@ div.curved-16 {
 	transform: rotate(31deg) rotateX(11deg);
 }
 .curved-16 > .letter:nth-child(5) {
-	transform: rotate(18deg) rotateX(20deg);
+	transform: rotate(18deg) rotateX(22deg);
 }
 .curved-16 > .letter:nth-child(6) {
-	transform: rotate(6deg) rotateX(28deg);
+	transform: rotate(6deg) rotateX(30deg);
 }
 .curved-16 > .letter:nth-child(7) {
-	transform: rotate(-3deg) rotateX(35deg);
+	transform: rotate(-3deg) rotateX(37deg);
 }
 
 /* Menu burger */
@@ -589,7 +590,7 @@ div.curved-16 {
 	top: 200px;
     left: 183px;
     bottom: 179px;
-	background: #ffc00e;
+	background: #9b00d877;
 	transition-delay: 0.4s;
 }
 .curved {
@@ -602,13 +603,13 @@ div.curved-16 {
 	opacity: 1;
 }
 .open .l7:hover {
-	background: shade(#ffc00e, 90%);
-	color: #ffc00e;
+	background: shade(#8b44ee, 90%);
+	color: #8b44ee;
 	transition-delay: 0s;
 }
 .open .l7:active {
-	background: shade(#ffc00e, 50%);
-	color: #ffc00e;
+	background: shade(#8b44ee, 50%);
+	color: #8b44ee;
 }
 .open .l7.toggle {
 	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -618,7 +619,7 @@ div.curved-16 {
     line-height: 63px;
     padding: 0;
     width: 61px;
-	background: gold;
+	background: rgb(10, 10, 11);
 	opacity: 1;
 	transform: none;
 	pointer-events: auto;
@@ -1560,8 +1561,12 @@ svg {
 
 a,
 .o-link {
-	color: #1a0dab;
+	color: #E3E6F5;
 	transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a.toggle {
+	animation: cvLights 10s 750ms linear infinite;
 }
 
 a:hover,
