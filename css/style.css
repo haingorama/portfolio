@@ -8,7 +8,6 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	
 }
 
 body, html {
@@ -17,9 +16,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
-	/* background-color: #f9f0ff; */
-	/* background-image: -webkit-linear-gradient(0deg, #efe7ea 0%, #E9E4F0 100%) */
-	background-image: -webkit-linear-gradient(0deg, #f5ebff 0%, #fdfcfc 40%, #f9f0ff 100%)
+	background-image: -webkit-linear-gradient(0deg, #f5ebff 0%, #fdfcfc 40%, #f9f0ff 100%);
 }
 
 a {
@@ -141,7 +138,8 @@ nav.top-right {
     left: 0px;
     right: 59px;
     bottom: 2px;
-	background: #e357839e;
+	/* background: #e357839e; */
+	background: #21df3749;
 	transition-delay: 0s;
 }
 .open .l1 {
@@ -151,12 +149,10 @@ nav.top-right {
 }
 .open .l1:hover {
 	background: shade(#659EF5, 90%);
-	/* color: rgba(255, 99, 71, 0.445); */
 	transition-delay: 0s;
 }
 .open .l1:active {
 	background: shade(#659EF5, 50%);
-	/* color: tomato; */
 }
 .open .l1.toggle {
 	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -216,7 +212,8 @@ div.curved-11 {
     left: 32px;
     right: 92px;
     bottom: 32px;
-	background: #e357833d;
+	/* background: #e357833d; */
+	background: #1480fb71;
 	transition-delay: 0s;
 }
 .open .l2 {
@@ -226,12 +223,10 @@ div.curved-11 {
 }
 .open .l2:hover {
 	background: shade(#659EF5, 90%);
-	/* color: tomato; */
 	transition-delay: 0s;
 }
 .open .l2:active {
 	background: shade(#659EF5, 50%);
-	/* color: tomato; */
 }
 .open .l2.toggle {
 	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -290,7 +285,8 @@ div.curved-12 {
 .l3 {
     top: 83px;
     right: 129px;
-	background: #e357833d;
+	/* background: #e357833d; */
+	background: #ea00ff5a;
     height: 294px;
     width: 295px;
 }
@@ -301,12 +297,10 @@ div.curved-12 {
 }
 .open .l3:hover {
 	background: shade(#659EF5, 90%);
-	/* color: tomato; */
 	transition-delay: 0s;
 }
 .open .l3:active {
 	background: shade(#659EF5, 50%);
-	/* color: tomato; */
 }
 .open .l3.toggle {
 	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -358,7 +352,8 @@ div.curved-13 {
     left: 98px;
     right: 157px;
     bottom: 95px;
-	background: #e357833d;
+	/* background: #e357833d; */
+	background: #db7f7d7f;
     transition-delay: 0.1s;
     width: 232px;
     height: 232px;
@@ -370,12 +365,10 @@ div.curved-13 {
 }
 .open .l4:hover {
 	background: shade(#659EF5, 90%);
-	/* color: #ff7a39; */
 	transition-delay: 0s;
 }
 .open .l4:active {
 	background: shade(#659EF5, 50%);
-	/* color: #ff7a39; */
 }
 .open .l4.toggle {
 	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -439,7 +432,9 @@ div.curved-14 {
     left: 126px;
     right: 189px;
     bottom: 125px;
-	background: #e357833d;
+	/* background: #e357833d; */
+	/* background: #d9787a6f; */
+	background: rgba(218, 165, 32, 0.605);
 	transition-delay: 0.2s;
 }
 .open .l5 {
@@ -449,12 +444,10 @@ div.curved-14 {
 }
 .open .l5:hover {
 	background: shade(#659EF5, 90%);
-	/* color: #ff912b; */
 	transition-delay: 0s;
 }
 .open .l5:active {
 	background: shade(#659EF5, 50%);
-	/* color: #ff912b; */
 }
 .open .l5.toggle {
 	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -518,7 +511,8 @@ div.curved-15 {
     left: 158px;
     right: 219px;
     bottom: 154px;
-	background: #e3578387;
+	/* background: #e3578387; */
+	background: rgba(255, 217, 0, 0.482);
 	transition-delay: 0.3s;
 }
 .open .l6 {
@@ -528,12 +522,10 @@ div.curved-15 {
 }
 .open .l6:hover {
 	background: shade(tomato, 90%);
-	/* color: white; */
 	transition-delay: 0s;
 }
 .open .l6:active {
 	background: shade(#659EF5, 50%);
-	/* color: #ffa91c; */
 }
 .open .l6.toggle {
 	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -584,7 +576,8 @@ div.curved-16 {
 	top: 200px;
     left: 183px;
     bottom: 179px;
-	background: #e357836a;
+	/* background: #e357836a; */
+	background: #ffffffc8;
 	transition-delay: 0.4s;
 }
 .curved {
@@ -598,12 +591,10 @@ div.curved-16 {
 }
 .open .l7:hover {
 	background: shade(#659EF5, 90%);
-	/* color: #8b44ee; */
 	transition-delay: 0s;
 }
 .open .l7:active {
 	background: shade(#659EF5, 50%);
-	/* color: #8b44ee; */
 }
 .open .l7.toggle {
 	transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -854,9 +845,9 @@ div.curved-16 {
 	perspective: 1000;
 	pointer-events: all;
 	padding-left: 210px;
-	background-image: url(../img/haingo.png);
+	background-image: url(../img/haingo1.png);
 	background-size: 30%;
-	background-position: bottom left;
+	background-position: 8% bottom;
 	background-repeat: no-repeat;
 }
 .content-center-propos {
@@ -874,7 +865,9 @@ div.curved-16 {
 	color: transparent;
 	font-size: 3.8rem;
 	font-weight: 900;
-	background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+	/* background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat; */
+	background: url("../img/bg-titre.jpg") repeat;
+	background-position: 17% 23%;
 	-webkit-background-clip: text;
 	position:relative;
 	text-align: center;
@@ -3249,7 +3242,7 @@ to {
 	z-index: -1;
 	width:100%;
 	margin:0;
-	padding-top: 100px; 
+	padding: 100px 50px;
 	background-image:linear-gradient( 45deg, #f4c4f3 14.7%, #ca8bb3 73%, #493bdf 130%);
 	background-size:300% 300%;
 	animation: formationBg-gradient 15s ease infinite;
@@ -3284,6 +3277,7 @@ to {
 	width: 93%;
     height: 221px;
     margin: 7px;
+    padding-bottom: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
