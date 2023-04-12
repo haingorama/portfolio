@@ -353,7 +353,7 @@ div.curved-13 {
     right: 157px;
     bottom: 95px;
 	/* background: #e357833d; */
-	background: #db7f7d7f;
+	background: #ff006969;
     transition-delay: 0.1s;
     width: 232px;
     height: 232px;
@@ -512,7 +512,7 @@ div.curved-15 {
     right: 219px;
     bottom: 154px;
 	/* background: #e3578387; */
-	background: rgba(255, 217, 0, 0.482);
+	background: rgb(241 255 0 / 50%);
 	transition-delay: 0.3s;
 }
 .open .l6 {
@@ -3313,12 +3313,11 @@ to {
 /* ------------------------- PORTFOLIO ------------------------- */
 /* -------------------------------------------------------------- */
 .portfolio {
-	width: 100%;
-	height: 500px;
-	background-color: #0a0a0b;
-	/* position: relative; */
-	z-index: -1;
-	overflow: hidden;
+    width: 100%;
+    height: 450px;
+    background-color: #0a0a0b;
+    overflow: hidden;
+    padding-top: 40px;
 }
 
 .portfolio--title h1 {
@@ -3404,10 +3403,6 @@ animation: lights 5s 750ms linear infinite;
 	color: white;
 	mix-blend-mode: difference;
 }
-/* .portfolio--doc a {
-	color: #9b6bdd;
-	z-index: 257557;
-} */
 
 .portfolio--overlay {
 	position: absolute;
