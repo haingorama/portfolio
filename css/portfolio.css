@@ -101,8 +101,14 @@ img:hover {
     -webkit-tap-highlight-color: transparent;
 }
 
-.list {
-    margin-top: 2rem;
+.retour {
+    color: #ffffff;
+    margin: 10px 0 0 15px;
+    display: flex;
+    align-items: center;
+}
+.retour img {
+    padding-bottom: 15px;
 }
 /* ---- Ancre ---- */
 .ancre a {
@@ -110,13 +116,13 @@ img:hover {
 	border-radius: 50%;
 	bottom: 3%;
 	box-shadow: 2px 1px 10px 0px rgba(0,0,0,0.5);
-	height: 60px;
 	left: 94%;
 	position: fixed;
-	width: 60px;
+	height: 50px;
+	width: 52px;
 	z-index: 99;
 }
 .ancre img {
-	margin: 16px 15px;
-	width: 50%;
+	margin: 3px 3px;
+	width: 90%;
 }
