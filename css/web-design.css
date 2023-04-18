@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    z-index: 1;
+    background: #0000000a;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  a {
+    color: #8c00eb;
+  }
+  a:hover {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    color: #222222;
+  }
+  #articles-container h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-family: "Average Sans", sans-serif;
+    color: #222;
+  }
+  
+  img {
+    border: #1B1B1B 1px solid;;
+  }
+  #masthead {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../img/portfolio/WebDesign/HopPropreté/images-principal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  }
+  #masthead h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 80%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    color: white;
+    text-align: right;
+  }
+  @media (min-width: 900px) {
+    #masthead h1 {
+      font-size: 2.5rem;
+      width: 50%;
+    }
+  }
+  @media (min-width: 1200px) {
+    #masthead h1 {
+      font-size: 3rem;
+      width: 30%;
+    }
+  }
+  
+  .logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  .logo img {
+    width: 60px;
+  }
+
+  .retour-accueil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 33px;
+    text-decoration: none;
+  }
+  .retour-accueil p {
+    color: #fff;
+  }
+  #top-header {
+    /* background-color: #b5d2ef; */
+    background-image: url(../img/portfolio/WebDesign/bg-massilia.png);
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 30;
+  }
+  
+  #branding {
+    flex: 0 1 20%;
+  }
+  #branding img {
+    width: 30px;
+  }
+  
+  #main-menu {
+    flex: 1 0 20%;
+  }
+  #main-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #main-menu ul li {
+    margin-left: 0.1rem;
+    color: #fff;
+    padding-left: 20px;
+  }
+#main-menu a {
+    color: #222;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#main-menu a:hover {
+    color: rgba(34, 34, 34, 0.6);
+}
+
+main {
+    display: flex;
+    position: relative;
+}
+
+#articles-container {
+    margin: 0 auto;
+    padding: 2rem 0.5rem 2rem 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#articles-container img:nth-child(1) {
+    width: 100%;
+}
+#articles-container img:nth-child(2), 
+#articles-container img:nth-child(2) {
+  width: 50%;
+}
+@media (min-width: 900px) {
+#articles-container {
+    width: 70vw;
+}
+/* #articles-container h1 {
+  font-size: 2.5rem;
+} */
+}
+.article-header h1 {
+    font-size: 2.5rem;
+    color: #222222;
+    margin: 2rem 0;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+.article-header h2 {
+    font-size: 1.1rem;
+    color: rgba(34, 34, 34, 0.8);
+    line-height: 1.2;
+    font-style: italic;
+    margin: 0 0 2rem;
+    font-weight: 400;
+}
+
+@media (min-width: 500px) {
+    .article-header h1 {
+      font-size: 2.5rem;
+      color: #222222;
+      margin: 3rem 0 2rem;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -4px;
+    }
+    .article-header h2 {
+      font-size: 1.5rem;
+      color: rgba(34, 34, 34, 0.8);
+      line-height: 1;
+      font-style: italic;
+      margin: 0 0 3rem;
+      font-weight: 400;
+    }
+  }
+  .byline p {
+    color: rgba(34, 34, 34, 0.6);
+  }
+  
+  .article p {
+    font-size: 1.1rem;
+  }
+  @media (min-width: 1200px) {
+    .article p {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (min-width: 500px) {
+    .article {
+      padding-top: 2rem;
+    }
+  }
+  #sidebar {
+    display: none;
+    width: 75vw;
+    height: 95vh;
+    overflow-y: auto;
+    position: absolute;
+    right: -80vw;
+    top: -3.2rem;
+    background: #fff;
+    padding: 0;
+    transition: all 200ms ease;
+    z-index: 25;
+  }
+  #sidebar img {
+    width: 100%;
+  }
+  #sidebar h4 {
+    padding: 1rem;
+    background: #1B1B1B;
+    margin: 0;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  
+  @media (min-width: 900px) {
+    #sidebar {
+      display: block;
+      width: 25vw;
+      right: 0;
+    }
+  }
+  #element-1 p {
+    margin: 1rem 0 1.5rem;
+  }
+  
+  #element-2 ul {
+    list-style: none;
+  }
+  
+  .widget {
+    margin-bottom: 3rem;
+    min-height: 200px;
+  }
+  .widget:nth-child(odd) {
+    background: #eee;
+    color: #222;
+  }
+  .widget ul {
+    padding-bottom: 10px;
+  }
+  .widget p {
+    padding: 0 0.4rem;
+  }
+    .widget ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  .widget img {
+    margin-right: 20px;
+  }
+  hr {
+    margin: 3rem 0;
+    padding: 0;
+    border: 1px solid #efefef;
+  }
+  
+  .more-trigger {
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 200ms ease;
+    margin-top: 60px;
+    background: #0000009f;
+    /* padding: 0 1rem;
+    border: 1px solid #8c00eb; */
+  }
+  .more-trigger:hover {
+    border-color: #8c00eb;
+    font-weight: 800;
+  }
+  .more-trigger p {
+    color: #ffffff;
+    padding: 5px;
+  }
+  
+  #mobile-trigger-open {
+    width: 100%;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 50;
+    right: 0;
+    text-align: right;
+  }
+  #mobile-trigger-open p {
+    margin: 0;
+    padding-right: 2rem;
+  }
+  
+  @media (min-width: 900px) {
+    #mobile-trigger-open,
+  #mobile-trigger-close {
+      display: none;
+    }
+  }
+  #mobile-trigger-close {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  #mobile-trigger-close p {
+    padding: 0.5rem;
+    margin: 0;
+  }
+  
+  #overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.images-articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+.images-articles img {
+    margin: 20px;
+    width: 40%;
+    height: 40%;
+}
+.espace {
+  height: 22px;
+  background: #0000000a;
+}
+.voir {
+  display: flex;
+  align-items: center;
+}
+.voir p {
+  margin: 0;
+  padding-left: 30px;
+}
+.voir img {
+  border: transparent;
+}
