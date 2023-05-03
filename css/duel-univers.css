@@ -90,6 +90,25 @@ img {
     width: 100%;
 }
 
+.retour {
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px 0;
+}
+.retour p {
+    font-weight: 700;
+    padding: 0 0 16px 10px;
+    font-size: 1.3rem;
+}
+.retour img {
+	width: 4%;
+	margin: 0 0 23px 30px;
+}
+
 .second-partie {
     display: flex;
     flex-direction: row;

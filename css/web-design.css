@@ -101,7 +101,10 @@ body {
   #branding img {
     width: 30px;
   }
-  
+  #branding img:hover {
+    width: 20px;
+    transition:width 0.5s ease-out 0s;
+  }
   #main-menu {
     flex: 1 0 20%;
   }
@@ -351,6 +354,21 @@ main {
   margin: 0;
   padding-left: 30px;
 }
-.voir img {
+.voir img,  #branding img {
   border: transparent;
+}
+
+.retour {
+  color: #ffffff;
+  margin: 10px 0 0 15px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.retour p {
+  color: #ffffff;
+  font-weight: 700;
+}
+.retour img {
+  width: 5%;
 }

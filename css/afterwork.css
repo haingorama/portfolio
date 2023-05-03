@@ -81,6 +81,24 @@ p a {
   display: inline;
 }
 
+.retour {
+	color: #ffffff;
+	margin: -54px 0 0 -50px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.retour p {
+	color: #050505;
+    font-weight: 700;
+    padding: 0 0 27px 10px;
+}
+.retour img {
+	width: 1.8%;
+	margin: 0 0 30px 30px;
+  border: 0;
+}
+
 em {
   font-style: italic;
 }

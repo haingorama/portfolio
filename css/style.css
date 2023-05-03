@@ -8,6 +8,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	
 }
 
 body, html {
@@ -17,6 +18,7 @@ body, html {
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
 	background-image: -webkit-linear-gradient(0deg, #f5ebff 0%, #fdfcfc 40%, #f9f0ff 100%);
+	scroll-behavior: smooth;
 }
 
 a {
@@ -517,7 +519,7 @@ div.curved-15 {
 }
 .open .l6 {
 	transition-delay: 0.3s;
-	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 195deg);
+	transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 164deg);
 	opacity: 1;
 }
 .open .l6:hover {
@@ -540,7 +542,7 @@ div.curved-15 {
 	transform-origin: top;
 }
 div.curved-16 {
-    transform: rotate(-203deg);
+    transform: rotate(-204deg);
     height: 142px;
     width: 105px;
 }
@@ -550,25 +552,19 @@ div.curved-16 {
     top: 10px;
 }
 .curved-16 > .letter:nth-child(1) {
-	transform: rotate(66deg) rotateX(16deg);
+	transform: rotate(67deg) rotateX(21deg);
 }
 .curved-16 > .letter:nth-child(2) {
-	transform: rotate(54deg) rotateX(0deg);
+	transform: rotate(56deg) rotateX(0deg);
 }
 .curved-16 > .letter:nth-child(3) {
-	transform: rotate(43deg) rotateX(0deg);
+	transform: rotate(42deg) rotateX(0deg);
 }
 .curved-16 > .letter:nth-child(4) {
 	transform: rotate(31deg) rotateX(11deg);
 }
 .curved-16 > .letter:nth-child(5) {
 	transform: rotate(18deg) rotateX(22deg);
-}
-.curved-16 > .letter:nth-child(6) {
-	transform: rotate(6deg) rotateX(30deg);
-}
-.curved-16 > .letter:nth-child(7) {
-	transform: rotate(-3deg) rotateX(37deg);
 }
 
 /* Menu burger */

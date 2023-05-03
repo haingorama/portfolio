@@ -17,6 +17,27 @@ body {
 	color: #222;
 	margin: 0;
 }
+.retour {
+	color: #ffffff;
+	margin: 10px 0 0 15px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.retour p {
+	color: #050505;
+    font-weight: 700;
+    padding: 0 0 16px 10px;
+}
+.retour img {
+	width: 4%;
+	margin: 0 0 30px 30px;
+}
+
+.space {
+	height: 40px;
+}
+
 /* Grid
 ********************************************************************* */  
 .container {
@@ -329,10 +350,10 @@ header {
 	margin: 10px 0 30px 0;
 }
 
-.image {
+/* .image {
 	width: 70px;
 	margin-bottom: 30px;
-}
+} */
 
 .icon {
 	font-size: 6.5em;
@@ -341,7 +362,7 @@ header {
 img {
 	width: 79%;
     height: auto;
-    margin-left: 27px;
+    /* margin-left: 27px; */
 }
 
 .btn {
@@ -388,11 +409,13 @@ img {
 .demo {
     height: 500px;
     width: 45%;
-    padding-left: 126px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
 }
 .demo img {
-    width: 65%;
-    padding-left: 60px;
+    height: 500px;
+    width: auto;
 }
 
 .explication {

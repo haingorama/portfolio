@@ -23,6 +23,23 @@ body {
     transition: background-color var(--duration) var(--ease);
 }
 
+.retour {
+	color: #ffffff;
+	margin: 60px 0 0 67px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.retour p {
+	color: #ffffff;
+    font-weight: 700;
+    padding: 0 0 30px 14px;
+}
+.retour img {
+	width: 2.7%;
+	margin: 0 0 30px 5px;
+}
+
 .deux-parties {
     display: flex;
     align-items: center;
@@ -55,6 +72,7 @@ body {
     max-width: 100ch;
     padding: 4rem;
     margin: 8rem auto;
+    margin-top: 50px;
 }
 .page-content * + * {
     margin-top: 2.5rem;
