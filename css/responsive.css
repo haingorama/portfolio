@@ -1,7 +1,50 @@
 /* ------------------------------------ */
 /* ---------------MOBILE--------------- */
 /* ------------------------------------ */
-@media screen and (max-width: 512px) {
+@media screen and (min-width: 320px) and (max-width: 512px) {
+    body, html {
+        width: 100%;
+    }
+    nav.top-right {
+        width: 100%;
+        left: 80px;
+        z-index: 1;
+    }
+    header {
+        height: 750px;
+        position: relative;
+    }
+    /* CV */
+    #rotate-words div:first-child {
+        font-size: 2rem;
+        top: 127px;
+        left: 9vw;
+    }
+
+    .btn-cv {
+        padding-top: 119px;
+    }
+    .cv-pdf p {
+        top: 232px;
+    font-size: 20rem;
+    }
+    .cv-pdf span {
+        padding-top: 298px;
+    }
+    .cv-pdf span:hover {
+        font-size: 3rem;
+    }
+    .cv-pdf {
+    height: 169px;
+    margin-bottom: 150px;
+}
+    /* Titres */
+    .title--experiences, .title--portfolio, .title--projets, .title--formations,.title--competences, .title--contact{
+        font-size: 5rem;
+    }
+    .title--competences, .title--contact {
+        
+    }
 	.swiper-button-prev,
 	.swiper-button-next {
 		width: 60px;
@@ -20,6 +63,21 @@
 	.swiper-button-next span {
 		right: 45%;
 	}
+
+    /* Présentation Accueil*/
+    .content-inner {
+        padding: 20px;
+    }
+    .content-center-propos {
+        /* padding: 973px 90px 0px 0px; */
+        height: 73%;
+        width: 72%;
+        position: absolute;
+        margin-top: 0;
+    }
+    .a-propos p, .a-propos a {
+        
+    }
 }
 .swiper-button-next::after, .swiper-container-rtl .swiper-button-prev::after {
 	content: "attr" !important;

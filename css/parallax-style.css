@@ -83,3 +83,10 @@ display: block;
   overflow:visible;
   z-index: 2;
 }
+
+@media screen and (min-width: 320px) and (max-width: 512px) {
+  #chase-haingo {
+    height: 0;
+    bottom: 0;
+  }
+}
