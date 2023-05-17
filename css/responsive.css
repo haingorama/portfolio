@@ -1,18 +1,21 @@
 /* ------------------------------------ */
 /* ---------------MOBILE--------------- */
 /* ------------------------------------ */
-@media screen and (min-width: 320px) and (max-width: 512px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     body, html {
         width: 100%;
     }
     nav.top-right {
         width: 100%;
-        left: 80px;
+        left: 115px;
         z-index: 1;
     }
     header {
-        height: 750px;
+        height: 800px;
         position: relative;
+    }
+    #scene {
+        height: 800px;
     }
     /* CV */
     #rotate-words div:first-child {
@@ -30,8 +33,6 @@
     }
     .cv-pdf span {
         padding-top: 298px;
-    }
-    .cv-pdf span:hover {
         font-size: 3rem;
     }
     .cv-pdf {
@@ -65,18 +66,44 @@
 	}
 
     /* Présentation Accueil*/
+    .i-am {
+        position: relative;
+    }
     .content-inner {
         padding: 20px;
+        top: 78px;
+        background-position: 65% 100%;
+        width: 86%;
     }
     .content-center-propos {
-        /* padding: 973px 90px 0px 0px; */
-        height: 73%;
-        width: 72%;
-        position: absolute;
         margin-top: 0;
+    }
+    .a-propos {
+        z-index: -1;
+    }
+    .a-propos h1 {
+        font-size: 28px;
     }
     .a-propos p, .a-propos a {
         
+    }
+    /* EXPERIENCES */
+    .slideshow__slide-image.background-absolute {
+        top: 150px;
+        left: 0;
+        width: 100%;
+    }
+    .c-header-home_controls.-nomobile.o-button-group {
+        margin: -18.6% 66% -29% 92.5%;
+    }
+    p.slideshow__slide-caption-content {
+        padding: 0 30px;
+        margin-top: 390px;
+        max-width: 100%;
+        width: 97%;
+    }
+    .background-absolute {
+        height: 839px;
     }
 }
 .swiper-button-next::after, .swiper-container-rtl .swiper-button-prev::after {
@@ -184,10 +211,11 @@
             font-size: 1.2em;
         }
         .content-center-propos {
-            height: 80%;
+            height: 60%;
         }
         .content-center-propos {
             padding: 0 20px;
+            margin-top: 100px;
         }
 
         /* QUI JE SUIS */
@@ -204,19 +232,19 @@
             width: 100%;
         }
         .a-propos h1 {
-            font-size: 25px;
+            font-size: 33px;
         }
         .content-inner {
-            top: 50px;
-            background-position: 90% 89%;
+            background-position: 34% 106%;
+            background-size: 50%;
+            height: 700px;
             width: 100%;
-            z-index: 0;
         }
         .content-container p, .content-container h1 {
             /* width: 480%; */
         }
         .content-center-propos {
-            width: 100%;
+            width: 86%;
         }
         .a-propos p, .a-propos a {
             letter-spacing: 2px;
