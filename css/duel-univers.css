@@ -304,3 +304,42 @@ footer p {
     margin-bottom: 0;
     font-weight: 700;
 }
+
+/* --------------------------------- */
+/* ----------MEDIA QUERIES---------- */
+/* --------------------------------- */
+
+@media only screen and (max-width: 1150px) {
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+    h1 {
+        font-size: 3rem;
+        padding-top: 40px;
+    }
+    section {
+        height: 710px;
+        width: auto;
+    }
+    #bg-overlay {
+        height: 710px;
+    }
+    .retour img {
+        width: 9%;
+    }
+    .texte {
+        padding: 0 0 0 50px;
+    }
+    .illustration img {
+        display: none;
+    }
+    .second-partie {
+        flex-direction: column-reverse;
+    }
+    .site {
+        margin: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
