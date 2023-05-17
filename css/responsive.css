@@ -14,8 +14,18 @@
         height: 800px;
         position: relative;
     }
+    footer {
+        padding: 0 0 20px;
+    }
+    img.logo-footer {
+        max-width: 20% !important;
+    }
     #scene {
-        height: 800px;
+        height: 915px;
+    }
+    .projets, .formations {
+        height: auto;
+        padding-bottom: 150px;
     }
     /* CV */
     #rotate-words div:first-child {
@@ -28,11 +38,11 @@
         padding-top: 119px;
     }
     .cv-pdf p {
-        top: 232px;
-    font-size: 20rem;
+        top: 300px;
+        font-size: 20rem;
     }
     .cv-pdf span {
-        padding-top: 298px;
+        top: 210px;
         font-size: 3rem;
     }
     .cv-pdf {
@@ -42,9 +52,10 @@
     /* Titres */
     .title--experiences, .title--portfolio, .title--projets, .title--formations,.title--competences, .title--contact{
         font-size: 5rem;
+        letter-spacing: -6px;
     }
     .title--competences, .title--contact {
-        
+        margin-top: -45px;
     }
 	.swiper-button-prev,
 	.swiper-button-next {
@@ -65,15 +76,15 @@
 		right: 45%;
 	}
 
-    /* Présentation Accueil*/
+    /* PRESENTATION*/
     .i-am {
         position: relative;
     }
     .content-inner {
         padding: 20px;
-        top: 78px;
-        background-position: 65% 100%;
-        width: 86%;
+        /* top: 78px; */
+        /* background-position: 65% 100%;
+        width: 86%; */
     }
     .content-center-propos {
         margin-top: 0;
@@ -94,16 +105,103 @@
         width: 100%;
     }
     .c-header-home_controls.-nomobile.o-button-group {
-        margin: -18.6% 66% -29% 92.5%;
+        margin: -255% 66% -29% 92.5%;
     }
     p.slideshow__slide-caption-content {
-        padding: 0 30px;
-        margin-top: 390px;
+        font-size: 2.2rem;
+        margin-top: 370px;
         max-width: 100%;
-        width: 97%;
+        width: 100%;
     }
     .background-absolute {
         height: 839px;
+    }
+    .slideshow {
+        position: relative;
+        min-height: 1200px;
+        width: 100%;
+    }
+    .slideshow__slide-caption-listwork {
+        padding-right: 0;
+    }
+    h3.slideshow__slide-caption-title {
+        padding-bottom: 24px;
+        margin: 0;
+    }
+    .slideshow__slide-caption-listwork ul {
+        font-size: 1.7rem;
+        padding: 0 0 0 60px;
+    }
+    .pagination {
+        display: none;
+    }
+    /* COMPETENCES */
+    .competences--cards div {
+        width: 50%;
+        height: 250px;
+    }
+    .bg-titre-cpt {
+        height: 34px;
+    }
+    .bg-titre-cpt {
+    background: rgb(10, 10, 11);
+    width: 100%;
+    height: 34px;
+    }
+    .competences--cards {
+        flex-wrap: wrap;
+    }
+    .competences--cards h1 {
+        font-size: 2.5rem;
+    }
+    .gdc {
+        padding-left: 36px;
+    }
+    .c--card {
+        padding: 0 !important;
+    }
+    .c--card.bdd {
+        padding-right: 0px;
+    }
+    .c--card.bdd h1 {
+        padding-left: 50px;
+    }
+    .c--card li {
+        font-size: 2rem;
+    }
+    /* PROJETS */
+    .projets p {
+        font-size: 1.4em;
+    }
+    /* FORMATIONS */
+    .formations--cards {
+        flex-wrap: wrap;
+    }
+    .formations--cards div {
+        height: 300px;
+        padding: 20px 0;
+    }
+    .f--card h1 {
+        font-size: 1.8em;
+    }
+    .f--card li {
+        font-size: 2rem;
+    }
+    /* FOOTER */
+    footer li {
+        font-size: 2.3rem;
+    }
+    ul.social li a i {
+        width: 49px;
+        font-size: 35px;
+    }
+    ul.social li {
+        padding-right: 80px;
+    }
+    footer, footer p {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 2rem;
     }
 }
 .swiper-button-next::after, .swiper-container-rtl .swiper-button-prev::after {
@@ -211,11 +309,11 @@
             font-size: 1.2em;
         }
         .content-center-propos {
-            height: 60%;
+            height: 40%;
         }
         .content-center-propos {
             padding: 0 20px;
-            margin-top: 100px;
+            margin-top: 169px;
         }
 
         /* QUI JE SUIS */
@@ -225,7 +323,6 @@
             width: 100%;
         }
         .i-am-text {
-            /* width: 300%; */
             width: 100%;
         }
         .btn-cv {
@@ -237,7 +334,7 @@
         .content-inner {
             background-position: 34% 106%;
             background-size: 50%;
-            height: 700px;
+            height: 740px;
             width: 100%;
         }
         .content-container p, .content-container h1 {
@@ -254,7 +351,7 @@
 
         /* EXPERIENCES */
         .btn-cv {
-            padding-top: 60px;
+            /* padding-top: 110px; */
         }
 
 }
