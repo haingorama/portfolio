@@ -132,6 +132,7 @@ main aside {
   font-family: PressStart2PRegular;
   -webkit-filter: blur(1px);
 }
+
 @media (min-width: 700px) {
   main .main-title {
     grid-column: 1/-1;
@@ -760,3 +761,12 @@ p:nth-child(8) {
   margin: 
   20px 0;
 }
+
+/* @media (min-width: 320px) and (max-width: 750px) {
+  .retour img {
+    width: 6%;
+  }
+  .retour p {
+    font-size: 3rem;
+  }
+} */

@@ -6,9 +6,9 @@
         width: 100%;
     }
     nav.top-right {
-        width: 100%;
-        left: 115px;
-        z-index: 1;
+        width: 119%;
+        left: 130px;
+        z-index: 9999;
     }
     header {
         height: 800px;
@@ -226,7 +226,6 @@
 	.primary-menu{
 		position: relative;
 		overflow: hidden;
-		/* margin-top: 18px; */
 	}
 
 	.primary-menu .navbar-nav{
@@ -306,10 +305,6 @@
             width: 240%;
         }
         #fl2 {
-            /* margin-top: 98px;
-            margin-left: 24%;
-            height: auto;
-            width: 53%; */
             display: none !important;
         }
         .phrase-accroche p {
@@ -326,7 +321,6 @@
         /* QUI JE SUIS */
         .i-am {
             display: inline-block;
-            /* flex-direction: column-reverse; */
             width: 100%;
         }
         .i-am-text {
@@ -344,9 +338,6 @@
             height: 740px;
             width: 115%;
         }
-        .content-container p, .content-container h1 {
-            /* width: 480%; */
-        }
         .content-center-propos {
             width: 86%;
         }
@@ -354,9 +345,5 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             font-size: 1.8rem;
-        }
-        /* EXPERIENCES */
-        .btn-cv {
-            /* padding-top: 110px; */
         }
 }
