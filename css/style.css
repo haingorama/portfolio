@@ -3001,7 +3001,8 @@ button .floating-btn:focus {
 }
 
 .c-header-home_controls.-nomobile.o-button-group {
-	margin: 1.4% 55% -29% 49.5%;
+	/* margin: 1.4% 55% -29% 49.5%; */
+  margin: -2.6% 55% -29% 48.5%;
 }
 
 .divide {
